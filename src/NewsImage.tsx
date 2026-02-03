@@ -34,16 +34,14 @@ export default function NewsImage() {
         py-20 
         bg-white 
         rounded-2xl 
-        border 
-        border-gray-200
+        border-2 border-transparent
         shadow-sm 
         px-6 
         max-w-5xl 
         mx-auto
-        transition-all 
+        transition
         duration-300
-        hover:border-purple-300
-        hover:shadow-[0_0_12px_rgba(109,0,220,0.35)]
+        hover:border-brand-purple
       "
     >
       <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">

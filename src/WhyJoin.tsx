@@ -66,11 +66,11 @@ export default function WhyJoin() {
       {/* Inject animation into page */}
       <style>{cardAnimation}</style>
 
-      <section id="WhyJoin" className="relative py-12 bg-white rounded-2xl border
+      <section id="WhyJoin" className="relative py-12 bg-white rounded-2xl border-2
       border-transparent
-      hover:border-purple-300
-      hover:shadow-[0_0_12px_rgba(109,0,220,0.35)]
-      transition-all 
+      hover:border-brand-orange-400
+      font-bold
+      transition
       duration-300">
         <div className="max-w-6xl mx-auto px-4">
 
@@ -80,7 +80,7 @@ export default function WhyJoin() {
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">
             Why Join Neat Affiliates?
           </h2>
-          <p className="text-center text-gray-500 mb-8 hover:font-bold transition">
+          <p className="text-center text-gray-500 mb-8  transition">
             Top reasons why affiliates love working with us
           </p>
 
@@ -92,10 +92,10 @@ export default function WhyJoin() {
               <div
                 key={item.id}
                 className="group
-                      p-4 bg-white shadow-sm rounded-lg border border-gray-200 flex items-start gap-3 
-                      opacity-0 transition-all duration-300
-                      hover:border-purple-300
-                      hover:bg-purple-700
+                      p-4 bg-white rounded-xl border border-gray-200 flex items-start gap-3 
+                      opacity-0 transition duration-300
+                      hover:border-brand-orange-400
+                      hover:bg-brand-purple-700
                 "
                 style={{
                   animation: "slideIn 1.2s ease-out forwards",
@@ -114,11 +114,11 @@ export default function WhyJoin() {
 
                 {/* Title + Description */}
                 <div>
-                  <h3 className="text-gray-800 font-semibold text-sm mb-1 group-hover:text-white transition">
+                  <h3 className="text-gray-800 font-bold text-sm mb-1 transition">
                     {item.title}
                   </h3>
 
-                  <p className="text-gray-600 text-xs leading-snug group-hover:text-white transition">
+                  <p className="text-gray-600 text-xs leading-snug cursor-pointer transition">
                     {item.description}
                   </p>
                 </div>
@@ -130,17 +130,17 @@ export default function WhyJoin() {
 {/* ------------------------------------------------------------
     DESKTOP VERSION — same size cards, last row centered
 ------------------------------------------------------------ */}
-<div className="hidden md:flex flex-wrap justify-center gap-6 w-full">
+<div className="hidden md:flex flex-wrap justify-center gap-6 w-full transition-transform duration-300 ease-in-out hover:scale-105">
   {items.map((item, index) => (
     <div
       key={item.id}
       className="
         group
         p-6 bg-white shadow-md rounded-xl border border-gray-200
-        transition-all duration-300
+        transition duration-300
         w-[300px] text-center opacity-0
-        hover:shadow-lg hover:border-purple-300
-        hover:bg-purple-700
+        hover:border-brand-orange-400
+        hover:text-black
       "
       style={{
         animation: "slideIn 1.2s ease-out forwards",
@@ -158,12 +158,12 @@ export default function WhyJoin() {
       )}
 
       {/* Title */}
-      <h3 className="text-gray-800 font-bold text-lg mb-2 group-hover:text-white transition">
+      <h3 className="text-gray-800 cursor-default select-none font-bold text-lg mb-2 transition">
         {item.title}
       </h3>
 
       {/* Description */}
-      <p className="text-gray-600 text-sm px-2 leading-relaxed group-hover:text-white transition">
+      <p className="text-gray-600 cursor-default select-none text-sm px-2 leading-relaxed transition">
         {item.description}
       </p>
     </div>
@@ -177,14 +177,11 @@ export default function WhyJoin() {
             <button
               onClick={() => setModalType("signup")}
               className="
-                text-xl font-bold px-6 py-3 rounded-full
-                bg-purple-600 text-white hover:bg-purple-800
+                text-xl font-bold px-6 py-3 rounded-xl
+                bg-brand-purple text-white hover:bg-brand-orange
                 shadow-lg transition
-                border-transparent
-                 hover:border-purple-300
                  hover:font-bold
-                 hover:shadow-[0_0_12px_rgba(109,0,220,0.35)]
-                 transition-all 
+                 transition 
                  duration-300
               "
             >

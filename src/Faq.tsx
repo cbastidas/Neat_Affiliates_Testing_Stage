@@ -36,19 +36,20 @@ export default function Faq({ onSignup }: FaqProps) {
   const filtered = faqs.filter(f => f.category === activeCategory);
 
   return (
-    <section id="FAQ" className="py-16 text-center bg-white border border-transparent
-    hover:border-purple-300
-    hover:shadow-[0_0_12px_rgba(109,0,220,0.35)]
-    transition-all duration-300
-    rounded-2xl">
+    <section id="FAQ" className="py-16 text-center bg-white 
+                                  border-2 border-transparent
+                                  hover:border-brand-orange-400
+                                  font-bold
+                                  transition duration-300
+                                  rounded-2xl">
       <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
-      <p className="text-gray-600 mb-6 hover:font-bold transition">You can find the answers to your questions. For different questions, please contact us.</p>
+      <p className="text-gray-600 mb-6 transition">You can find the answers to your questions. For different questions, please contact us.</p>
 
       <div className="flex justify-center flex-wrap gap-4 mb-6">
         {categories.map((cat) => (
           <button 
             key={cat} 
-            className={`px-4 py-2 rounded-full ${activeCategory === cat ? 'bg-purple-600 font-bold text-white hover:bg-purple-800' : 'bg-gray-200 text-black hover:font-bold hover:bg-gray-200 hover:text-purple-700'}`} 
+            className={`px-4 py-2 rounded-xl ${activeCategory === cat ? 'bg-brand-purple-600 font-semibold text-white hover:bg-brand-purple-800 hover:font-bold' : 'bg-brand-orange-300 font-semibold text-white hover:font-bold hover:bg-brand-orange  '}`} 
             onClick={() => setActiveCategory(cat)}
           >
             {cat}
@@ -58,11 +59,11 @@ export default function Faq({ onSignup }: FaqProps) {
 
       <div className="max-w-4xl mx-auto text-left">
         {filtered.map((faq) => (
-          <div key={faq.id} className="mb-4 border rounded bg-white border border-transparent
-    hover:border-purple-300
-    hover:shadow-[0_0_12px_rgba(109,0,220,0.35)]
-    transition-all duration-300
-    rounded-2xl">
+          <div key={faq.id} className="mb-4 border rounded-xl bg-white 
+                                        border-2 border-gray
+                                        hover:border-brand-orange-400         
+                                        transition duration-300
+                                        rounded-2xl">
             <button 
               onClick={() => setExpanded(expanded === faq.id ? null : faq.id)} 
               className="w-full text-left px-4 py-3 font-semibold"
@@ -82,7 +83,7 @@ export default function Faq({ onSignup }: FaqProps) {
       <div className="text-center mt-12">
           <button
               onClick={onSignup}
-              className="text-base sm:text-lg lg:text-xl font-bold px-8 py-3 rounded-full bg-green-600 text-white hover:bg-green-800 shadow-lg transition"
+              className="text-base sm:text-lg lg:text-xl font-semibold px-8 py-3 rounded-xl bg-brand-purple text-white hover:bg-brand-orange shadow-lg transition"
           >
               Ready to Partner? Sign Up Now!
           </button>

@@ -252,7 +252,6 @@ const showLess = (groupName: string) => {
     className="text-gray-700 font-bold text-base px-3 py-2 rounded border border-transparent
     hover:border-purple-300
     hover:text-purple-700
-    hover:shadow-[0_0_12px_rgba(109,0,220,0.35)]
     transition-all duration-300
     rounded-2xl"
     >
@@ -262,14 +261,14 @@ const showLess = (groupName: string) => {
 
   <button
     onClick={() => setModalType('signup')}
-    className="bg-green-600 text-white px-3 py-0 rounded hover:bg-green-800"
+    className="bg-brand-purple text-white px-3 py-0 rounded hover:bg-brand-orange"
   >
     Register
   </button>
 
   <button
     onClick={() => setModalType('login')}
-    className="bg-purple-600 text-white px-3 py-0 rounded hover:bg-purple-800"
+    className="text-gray-700 px-3 py-0 rounded border hover:bg-brand-orange hover:text-white"
   >
     Login
   </button>
@@ -351,9 +350,9 @@ const showLess = (groupName: string) => {
               pt-6 md:pt-24 pb-6
               border-2 rounded-2xl
               border-transparent
-              hover:border-purple-300
-              hover:shadow-[0_0_12px_rgba(109,0,220,0.35)]
-              transition-all duration-300
+              font-bold
+              hover:border-brand-orange-400
+              transition duration-300
             "
           >
             <div className="max-w-[1200px] mx-auto px-4">
@@ -361,7 +360,7 @@ const showLess = (groupName: string) => {
                 Commission Rate
               </h2>
 
-              <p className="text-center text-gray-500 mb-8 text-base hover:font-bold transition">
+              <p className="text-center text-gray-500 mb-8 text-base transition">
                 Earn more as you grow. Our laddered commission system rewards your success.
               </p>
 
@@ -394,10 +393,9 @@ const showLess = (groupName: string) => {
                         <div className="
                           grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 
                           gap-8 justify-items-center w-full p-6 rounded-2xl
-                          border-transparent
-                          hover:border-purple-300
-                          hover:shadow-[0_0_12px_rgba(109,0,220,0.35)]
-                          transition-all duration-300
+                          border-2 border-transparent
+                          hover:border-brand-orange-400
+                          transition duration-300
                         ">
                           {brands.slice(0, 3).map((brand) => (
                             <BrandCard
@@ -450,9 +448,9 @@ const showLess = (groupName: string) => {
                                 <button
                                   onClick={() => showMore(groupName, brands.length - 3)}
                                   className="
-                                    px-6 py-2 rounded-full 
-                                    bg-purple-600 text-white font-semibold
-                                    hover:bg-purple-700 hover:font-bold
+                                    px-6 py-2 rounded-xl 
+                                    bg-brand-orange text-white font-semibold
+                                    hover:bg-brand-purple hover:font-bold
                                     transition duration-300
                                   "
                                 >
@@ -465,13 +463,12 @@ const showLess = (groupName: string) => {
                                 <button
                                   onClick={() => showLess(groupName)}
                                   className="
-                                    px-6 py-2 rounded-full 
-                                    bg-gray-200 text-gray-800 font-semibold 
-                                    hover:bg-gray-300 
-                                    hover:border-purple-300 hover:text-purple-700 
+                                    px-6 py-2 rounded-xl
+                                    bg-gray text-black font-semibold 
+                                    hover:bg-brand-orange  
                                     hover:font-bold
-                                    hover:shadow-[0_0_12px_rgba(109,0,220,0.35)]
-                                    border border-transparent
+                                    hover:text-white
+                                    border
                                     transition-all duration-300
                                   "
                                 >
@@ -512,11 +509,12 @@ const showLess = (groupName: string) => {
         </section>
 
       {/* Login and Signup Section */}
-      <div className="py-16 text-center bg-white border border-transparent
-        hover:border-purple-300
-        hover:shadow-[0_0_12px_rgba(109,0,220,0.35)]
-        transition-all duration-300
-        rounded-2xl
+      <div className="py-16 text-center bg-white 
+                      border-2 border-transparent
+                      font-bold
+                      hover:border-brand-orange-400
+                      transition duration-300
+                      rounded-2xl
         ">
 
           <h2 className="text-3xl font-bold mb-6">Join Neat Affiliates Today!</h2>
@@ -526,7 +524,7 @@ const showLess = (groupName: string) => {
           
           <button
             onClick={() => setModalType('signup')}
-            className="text-base sm:text-lg lg:text-xl font-bold bg-green-600 text-white px-5 py-2 rounded mx-2 hover:bg-green-800"
+            className="text-base sm:text-lg lg:text-xl font-bold bg-brand-purple text-white px-5 py-2 rounded-xl mx-2 hover:bg-brand-orange"
           >
             Get Started
           </button>
@@ -567,13 +565,13 @@ const showLess = (groupName: string) => {
       bottom-4 
       z-[10000]
       px-3 py-2
-      bg-purple-700 
+      bg-brand-purple 
       text-white 
-      rounded-full 
+      rounded-xl 
       shadow-md 
       text-sm
       font-semibold
-      hover:bg-purple-800 
+      hover:bg-brand-orange 
       active:scale-95
       transition-all
       duration-200

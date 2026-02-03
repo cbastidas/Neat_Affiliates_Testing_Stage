@@ -40,8 +40,9 @@ export default function BrandLogoGallery({ onSignup }: BrandLogoGalleryProps) {
   className="
     relative overflow-hidden bg-white 
     py-16 md:py-16 
+    border-2 border-transparent
     rounded-2xl border border-transparent
-    hover:border-purple-300 hover:shadow-[0_0_12px_rgba(109,0,220,0.35)]
+    hover:border-brand-orange-400
     transition-all duration-300
   "
 >
@@ -81,12 +82,12 @@ export default function BrandLogoGallery({ onSignup }: BrandLogoGalleryProps) {
       <button
         onClick={onSignup}
         className="
-          text-lg font-extrabold
+          text-lg font-bold
           px-4 py-3
-          rounded-full 
-          bg-green-600 text-white 
-          hover:bg-green-700
-          shadow-md hover:shadow-lg 
+          rounded-xl 
+          bg-brand-purple text-white 
+          hover:bg-brand-orange
+          shadow-md
           transition
         "
       >

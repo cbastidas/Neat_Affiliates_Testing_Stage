@@ -128,11 +128,10 @@ export default function BrandCard({
 
   return (
     <div className="brand-card mx-auto relative
-    border border-transparent
-    hover:font-bold
-    hover:border-purple-300
-    hover:shadow-[0_0_12px_rgba(109,0,220,0.35)]
-    transition-all duration-300
+    border-2 border-transparent
+    font-bold
+    hover:border-brand-orange-400
+    transition duration-300
     rounded-2xl">
       <div className="flex justify-between items-center mb-2
       
@@ -154,11 +153,10 @@ export default function BrandCard({
               font-extrabold
               inline-flex items-center justify-center
               h-10 w-28
-              bg-green-600
+              bg-brand-purple
               text-white text-sm font-semibold
-              rounded-full shadow
-              hover:font-bold
-              hover:bg-green-700 transition">
+              rounded-xl
+              hover:bg-brand-orange transition">
             Join Now
           </button>
         )}

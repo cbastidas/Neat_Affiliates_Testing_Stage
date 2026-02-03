@@ -91,7 +91,7 @@ export default function FaqEditor() {
         {categories.map((cat) => (
           <button
             key={cat}
-            className={`px-4 py-2 rounded-full ${selectedCategory === cat ? 'bg-purple-600 text-white' : 'bg-gray-200 text-black'}`}
+            className={`px-4 py-2 rounded-xl ${selectedCategory === cat ? 'bg-brand-purple-500 text-white' : 'bg-brand-orange-50 text-black'}`}
             onClick={() => setSelectedCategory(cat)}
           >
             {cat}
