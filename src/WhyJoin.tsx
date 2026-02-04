@@ -68,7 +68,6 @@ export default function WhyJoin() {
 
       <section id="WhyJoin" className="relative py-12 bg-white rounded-2xl border-2
       border-transparent
-      hover:border-brand-orange-400
       font-bold
       transition
       duration-300">
@@ -130,42 +129,43 @@ export default function WhyJoin() {
 {/* ------------------------------------------------------------
     DESKTOP VERSION — same size cards, last row centered
 ------------------------------------------------------------ */}
-<div className="hidden md:flex flex-wrap justify-center gap-6 w-full transition-transform duration-300 ease-in-out hover:scale-105">
+<div className="hidden md:flex flex-wrap justify-center gap-8 w-full">
   {items.map((item, index) => (
+    /* CONTENEDOR A: Maneja la entrada (SlideIn) y el ancho */
     <div
       key={item.id}
-      className="
-        group
-        p-6 bg-white shadow-md rounded-xl border border-gray-200
-        transition duration-300
-        w-[300px] text-center opacity-0
-        hover:border-brand-orange-400
-        hover:text-black
-      "
+      className="w-[300px] flex opacity-0"
       style={{
         animation: "slideIn 1.2s ease-out forwards",
         animationDelay: `${index * 0.2}s`,
       }}
     >
-      {/* Icon */}
-      {item.emoji_url && (
-        <img
-          src={item.emoji_url}
-          alt="Icon"
-          className="mx-auto mb-4"
-          style={{ width: 60, height: 60 }}
-        />
-      )}
+      <div className="
+        flex-1 flex-col p-6 bg-white rounded-xl border border-gray-200 shadow-md text-center
+        transition-all duration-300 ease-in-out
+        hover:scale-110 hover:z-20 hover:shadow-2xl
+        cursor-default select-none
+      ">
+        {/* Icon */}
+        {item.emoji_url && (
+          <img
+            src={item.emoji_url}
+            alt="Icon"
+            className="mx-auto mb-4 flex-shrink-0"
+            style={{ width: 60, height: 60 }}
+          />
+        )}
 
-      {/* Title */}
-      <h3 className="text-gray-800 cursor-default select-none font-bold text-lg mb-2 transition">
-        {item.title}
-      </h3>
+        {/* Títle */}
+        <h3 className="text-gray-800 font-bold text-lg mb-2">
+          {item.title}
+        </h3>
 
-      {/* Description */}
-      <p className="text-gray-600 cursor-default select-none text-sm px-2 leading-relaxed transition">
-        {item.description}
-      </p>
+        {/* Description */}
+        <p className="flex-grow text-gray-600 text-sm px-2 leading-relaxed">
+          {item.description}
+        </p>
+      </div>
     </div>
   ))}
 </div>
@@ -178,7 +178,9 @@ export default function WhyJoin() {
               onClick={() => setModalType("signup")}
               className="
                 text-xl font-bold px-6 py-3 rounded-xl
-                bg-brand-purple text-white hover:bg-brand-orange
+                border border-brand-orange text-black hover:bg-brand-orange
+                hover:text-white
+                hover: shadow-md
                 shadow-lg transition
                  hover:font-bold
                  transition 
