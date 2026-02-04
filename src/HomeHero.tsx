@@ -16,8 +16,8 @@ export default function HomeHero({ onSignup, onScrollNext }: Props) {
       id="HomeHero"
       className="relative rounded-2xl isolate overflow-hidden bg-white pt-24 pb-10 sm:pt-32 sm:pb-16
                  font-bold
+                 hover:scale-110 hover:z-20 hover:shadow-2xl
                  border-2 border-transparent
-                 hover:border-brand-purple-600
                  transition
                  duration-300"
       style={{ paddingTop: "5rem" }} // offset for fixed navbar
