@@ -42,6 +42,7 @@ export default function BrandLogoGallery({ onSignup }: BrandLogoGalleryProps) {
     py-16 md:py-16 
     border-2 border-transparent
     rounded-2xl border border-transparent
+    cursor-default select-none
     hover:scale-110 hover:z-20 hover:shadow-2xl
     transition-all duration-300
   "

@@ -39,6 +39,7 @@ export default function Faq({ onSignup }: FaqProps) {
     <section id="FAQ" className="py-16 text-center bg-white 
                                   border-2 border-transparent
                                   font-bold
+                                  cursor-default select-none
                                   transition duration-300
                                   rounded-2xl">
       <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>

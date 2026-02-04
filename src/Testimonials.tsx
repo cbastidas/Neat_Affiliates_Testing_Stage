@@ -155,6 +155,7 @@ export default function Testimonials() {
       className="py-2 px-3 sm:pt-16 text-center bg-white
       border-2 border-transparent
       font-bold
+      cursor-default select-none
       transition duration-300
       rounded-2xl"
     >

@@ -349,6 +349,7 @@ const showLess = (groupName: string) => {
               bg-white 
               pt-6 md:pt-24 pb-6
               border-2 rounded-2xl
+              cursor-default select-none
               border-transparent
               font-bold
               
@@ -511,8 +512,9 @@ const showLess = (groupName: string) => {
       <div className="py-16 text-center bg-white 
                       border-2 border-transparent
                       font-bold
-                      hover:border-brand-orange-400
-                      transition duration-300
+                      hover:scale-105 hover:z-20 hover:shadow-2xl
+                      cursor-default select-none
+                      transition-all duration-300
                       rounded-2xl
         ">
 

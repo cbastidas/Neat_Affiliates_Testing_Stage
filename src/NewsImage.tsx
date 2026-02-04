@@ -39,8 +39,9 @@ export default function NewsImage() {
         px-6 
         max-w-5xl 
         mx-auto
-        transition
+        transition 
         duration-300
+        cursor-default select-none
         hover:scale-110 hover:z-20 hover:shadow-2xl
       "
     >
