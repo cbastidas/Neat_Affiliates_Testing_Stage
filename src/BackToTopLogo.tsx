@@ -68,12 +68,12 @@ export default function BackToTopLogo({ homeAnchorId }: Props) {
             fixed bottom-6 right-4 
             z-40 w-12 h-12 
             rounded-full 
-            bg-purple-600 text-white 
+            bg-brand-purple text-white 
             shadow-lg 
             flex items-center justify-center 
             active:scale-95 
             transition 
-            hover:bg-purple-900
+            hover:bg-brand-orange
           "
         >
           <svg

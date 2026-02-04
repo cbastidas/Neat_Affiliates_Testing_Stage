@@ -92,9 +92,8 @@ export default function WhyJoin() {
                 key={item.id}
                 className="group
                       p-4 bg-white rounded-xl border border-gray-200 flex items-start gap-3 
-                      opacity-0 transition duration-300
-                      hover:border-brand-orange-400
-                      hover:bg-brand-purple-700
+                      opacity-0 transition-all duration-300
+                      hover:scale-105 hover:z-20 hover:shadow-2xl
                 "
                 style={{
                   animation: "slideIn 1.2s ease-out forwards",

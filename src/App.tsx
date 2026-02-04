@@ -215,7 +215,7 @@ const showLess = (groupName: string) => {
       {/* 🟢 Login Button (Mobile Only) */}
       <button
           onClick={() => setModalType('login')}
-          className="rounded-xl bg-green-600 px-5 py-2 text-white font-bold hover:bg-green-800 transition"
+          className="rounded-xl bg-brand-purple px-5 py-2 text-white font-bold hover:bg-brand-orange transition"
       >
           Login
       </button>
@@ -223,7 +223,7 @@ const showLess = (groupName: string) => {
       {/* 🟢 Hamburguer Menu (Increased Size) */}
       <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="text-purple-700 text-2xl" 
+          className="text-brand-purple text-2xl hover:scale-110 hover:z-20 hover:shadow-2xl cursor-default select-none transition-all duration-300 rounded-2xl hover:font-extrabold" 
       >
           {menuOpen ? '✕' : '☰'}
       </button>
@@ -250,8 +250,8 @@ const showLess = (groupName: string) => {
       }
     }}
     className="text-gray-700 font-bold text-base px-3 py-2 rounded border border-transparent
-    hover:border-purple-300
-    hover:text-purple-700
+    hover:border-brand-purple
+    hover:text-brand-purple
     transition-all duration-300
     rounded-2xl"
     >
@@ -298,10 +298,10 @@ const showLess = (groupName: string) => {
       </button>
     ))}
 
-    {/* Login/Signup en mobile */}
+    {/* Login/Signup in mobile */}
     <button
       onClick={() => { setModalType('signup'); setMenuOpen(false); }}
-      className="block w-full text-left text-green-700 py-2 px-2 font-medium hover:bg-green-100"
+      className="block w-full text-left text-brand-purple py-2 px-2 font-medium hover:bg-brand-orange hover:text-white rounded hover:font-bold"
     >
       Signup
     </button>
@@ -596,11 +596,11 @@ const showLess = (groupName: string) => {
       md:hidden 
       h-12 w-12 
       rounded-full 
-      bg-green-600 
+      bg-brand-orange 
       shadow-lg 
       flex items-center justify-center
       text-2xl 
-      hover:bg-green-800 
+      hover:bg-brand-purple 
       active:scale-[0.98] 
       transition
     "

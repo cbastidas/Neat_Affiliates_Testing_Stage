@@ -69,8 +69,8 @@ export default function ContactTelegramModal({ isOpen, onClose, onBrandClick }: 
     >
       <div
         ref={dialogRef}
-        className="bg-white shadow-xl relative p-6 animate-slideInLeft
-                   rounded-2xl
+        className="bg-brand-purple shadow-xl relative p-6 animate-slideInLeft
+                   rounded-2xl text-white
                    w-full max-w-[360px] mx-auto
                    md:w-[380px] md:mx-0"
         role="dialog"
@@ -87,7 +87,7 @@ export default function ContactTelegramModal({ isOpen, onClose, onBrandClick }: 
         <button
           onClick={onClose}
           aria-label="Close"
-          className="absolute top-3 right-3 text-gray-500 hover:text-gray-800"
+          className="text-white font-bold absolute top-3 right-3 hover:scale-110 transition hover:text-white hover:font-extrabold"
         >
           ✕
         </button>
@@ -96,7 +96,7 @@ export default function ContactTelegramModal({ isOpen, onClose, onBrandClick }: 
           Contact Support
         </h3>
 
-        <p className="text-center text-gray-600 mb-5">
+        <p className="text-center mb-5 text-white">
           Fill the form below and we will receive your message on Telegram.
         </p>
 
@@ -104,13 +104,13 @@ export default function ContactTelegramModal({ isOpen, onClose, onBrandClick }: 
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
+            <label className="block text-sm font-medium text-white mb-1">
               Your question <span className="text-red-600">*</span>
             </label>
             <textarea
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
-              className="w-full rounded-lg border px-3 py-2 h-28 resize-vertical focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="w-full text-black rounded-lg border px-3 py-2 h-28 resize-vertical focus:outline-none focus:ring-2 focus:ring-purple-500"
               placeholder="Write your question here…"
               required
             />
@@ -126,9 +126,9 @@ export default function ContactTelegramModal({ isOpen, onClose, onBrandClick }: 
           </button>
 
           {/* Clickable brand links (this is what you want) */}
-        <p className="font-bold text-center text-gray-400 mb-2">
+        <p className="text-white font-bold text-center text-gray-400 mb-2">
           <span
-            className="text-blue-600 cursor-pointer hover:underline"
+            className="text-brand-orange cursor-pointer hover:underline"
             onClick={() => onBrandClick("bluffbet")}
             role="button"
             tabIndex={0}
@@ -138,7 +138,7 @@ export default function ContactTelegramModal({ isOpen, onClose, onBrandClick }: 
           </span>
           ,{" "}
           <span
-            className="text-blue-600 cursor-pointer hover:underline"
+            className="text-brand-orange cursor-pointer hover:underline"
             onClick={() => onBrandClick("vidavegas")}
             role="button"
             tabIndex={0}
@@ -148,7 +148,7 @@ export default function ContactTelegramModal({ isOpen, onClose, onBrandClick }: 
           </span>{" "}
           and{" "}
           <span
-            className="text-blue-600 cursor-pointer hover:underline"
+            className="text-brand-orange cursor-pointer hover:underline"
             onClick={() => onBrandClick("jackburst")}
             role="button"
             tabIndex={0}
