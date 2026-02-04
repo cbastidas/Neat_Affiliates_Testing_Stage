@@ -154,7 +154,6 @@ export default function Testimonials() {
       id="Testimonials"
       className="py-2 px-3 sm:pt-16 text-center bg-white
       border-2 border-transparent
-      hover:border-brand-orange-400
       font-bold
       transition duration-300
       rounded-2xl"
@@ -216,7 +215,7 @@ export default function Testimonials() {
                 px-4 py-4 sm:px-6 sm:py-6 
                 rounded-2xl shadow-md 
                 border border-gray-200
-                hover:border-brand-orange-400
+                hover:scale-105 hover:z-20 hover:shadow-2xl
                 transition duration-300
                 h-full flex flex-col
               ">
