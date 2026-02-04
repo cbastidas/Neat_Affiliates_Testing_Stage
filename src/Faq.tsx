@@ -38,7 +38,6 @@ export default function Faq({ onSignup }: FaqProps) {
   return (
     <section id="FAQ" className="py-16 text-center bg-white 
                                   border-2 border-transparent
-                                  hover:border-brand-orange-400
                                   font-bold
                                   transition duration-300
                                   rounded-2xl">
@@ -61,7 +60,8 @@ export default function Faq({ onSignup }: FaqProps) {
         {filtered.map((faq) => (
           <div key={faq.id} className="mb-4 border rounded-xl bg-white 
                                         border-2 border-gray
-                                        hover:border-brand-orange-400         
+                                        hover:border-brand-orange-400 
+                                        hover:scale-105 hover:z-20 hover:shadow-2xl        
                                         transition duration-300
                                         rounded-2xl">
             <button 
