@@ -351,7 +351,7 @@ const showLess = (groupName: string) => {
               border-2 rounded-2xl
               border-transparent
               font-bold
-              hover:border-brand-orange-400
+              
               transition duration-300
             "
           >
@@ -394,7 +394,6 @@ const showLess = (groupName: string) => {
                           grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 
                           gap-8 justify-items-center w-full p-6 rounded-2xl
                           border-2 border-transparent
-                          hover:border-brand-orange-400
                           transition duration-300
                         ">
                           {brands.slice(0, 3).map((brand) => (

@@ -130,7 +130,7 @@ export default function BrandCard({
     <div className="brand-card mx-auto relative
     border-2 border-transparent
     font-bold
-    hover:border-brand-orange-400
+    hover:scale-110 hover:z-20 hover:shadow-2xl
     transition duration-300
     rounded-2xl">
       <div className="flex justify-between items-center mb-2
