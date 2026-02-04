@@ -41,7 +41,7 @@ export default function NewsImage() {
         mx-auto
         transition
         duration-300
-        hover:border-brand-purple
+        hover:scale-110 hover:z-20 hover:shadow-2xl
       "
     >
       <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">
