@@ -105,7 +105,7 @@ export default function ContactTelegramModal({ isOpen, onClose, onBrandClick }: 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-white mb-1">
-              Your question <span className="text-red-600">*</span>
+              Your question <span className="text-brand-orange">*</span>
             </label>
             <textarea
               value={question}
