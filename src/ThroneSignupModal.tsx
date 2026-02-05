@@ -387,7 +387,7 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
     {/* Biller details */}
     <div className="flex flex-col md:col-span-1">
       <label className="font-semibold text-white">* Biller details</label>
-      <p className="text-sm text-white mb-1">
+      <p className="text-sm text-white font-semibold mb-1">
         Invoice header example:<br/>
         Affiliate Inc.<br/>
         123 Example Street,<br/>
@@ -395,7 +395,7 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
         ABN: 123 456 789 0
       </p>
       <textarea 
-        className="border rounded p-2 w-full"
+        className="border rounded p-2 w-full text-gray-600"
         rows={5}
         disabled={!autoInvoice}
       ></textarea>
@@ -418,10 +418,10 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
       </select>
 
       <label className="font-semibold text-brand-orange">* Tax rate</label>
-      <div className="flex items-center gap-2 mb-4">
+      <div className="flex items-center gap-2 mb-4 text-gray-600">
         <input 
           type="number" 
-          className="border rounded p-2 w-full"
+          className="border rounded p-2 w-full text-gray-600"
           placeholder="0–100"
           disabled={!autoInvoice}
         />
@@ -434,7 +434,7 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
         type="text"
         disabled={!autoInvoice}
       />
-      <p className="text-sm text-white">
+      <p className="text-sm text-white font-semibold">
         The tax note will appear beside the tax amount on the generated invoice.
       </p>
 
@@ -445,13 +445,13 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
                                             {/* Terms of use */}
                     <div className="col-span-2 mt-4">
                         <label className="font-semibold text-brand-orange">* Terms of use</label>
-                        <p className="text-sm text-white">
+                        <p className="text-sm text-white font-semibold">
                             Please read the Terms of Use before agreeing.
                         </p>
 
                         <div className="flex items-center gap-2 mt-2 text-white">
                             <input type="checkbox" />
-                            <label className="text-sm">I agree with the NeatAffiliates Terms of Use</label>
+                            <label className="text-sm font-semibold">I agree with the NeatAffiliates Terms of Use</label>
                         </div>
                     </div>
 
