@@ -256,11 +256,11 @@ const VidavegasLatamSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
 
                 {/* Email */}
                 <a
-                  href="mailto:bluffbet@neataffiliates.com"
+                  href="mailto:vidavegas@neataffiliates.com"
                   className="flex w-fit items-center gap-2 text-brand-purple hover:underline transition text-lg font-medium"
                 >
                   <span className="text-2xl">📧</span>
-                  Email: bluffbet@neataffiliates.com
+                  Email: vidavegas@neataffiliates.com
                 </a>
 
               </div>
