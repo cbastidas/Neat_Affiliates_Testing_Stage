@@ -154,7 +154,7 @@ export default function BrandCard({
               inline-flex items-center justify-center
               h-10 w-28
               bg-brand-purple
-              text-white text-sm font-semibold
+              text-white text-sm font-extrabold
               rounded-xl
               hover:bg-brand-orange transition">
             Join Now

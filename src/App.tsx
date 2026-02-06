@@ -249,11 +249,10 @@ const showLess = (groupName: string) => {
         scrollToSection(id);
       }
     }}
-    className="text-gray-700 font-bold text-base px-3 py-2 rounded border border-transparent
-    hover:border-brand-purple
-    hover:text-brand-purple
-    transition-all duration-300
-    rounded-2xl"
+    className="text-black font-extrabold text-base px-3 py-2 rounded-xl border border-transparent
+    hover:border-brand-orange
+    hover:text-brand-orange
+    transition-all duration-300"
     >
     {id.replace(/([A-Z])/g, ' $1').trim()}
   </button>
@@ -261,14 +260,14 @@ const showLess = (groupName: string) => {
 
   <button
     onClick={() => setModalType('signup')}
-    className="bg-brand-purple text-white px-3 py-0 rounded hover:bg-brand-orange"
+    className="bg-brand-purple font-extrabold text-white px-3 py-0 rounded hover:bg-brand-orange"
   >
     Register
   </button>
 
   <button
     onClick={() => setModalType('login')}
-    className="text-gray-700 px-3 py-0 rounded border hover:bg-brand-orange hover:text-white"
+    className="text-black px-3 py-0 rounded font-extrabold border border-brand-orange hover:bg-brand-orange hover:text-white"
   >
     Login
   </button>
@@ -464,7 +463,8 @@ const showLess = (groupName: string) => {
                                   onClick={() => showLess(groupName)}
                                   className="
                                     px-6 py-2 rounded-xl
-                                    bg-gray text-black font-semibold 
+                                    bg-gray text-black font-bold 
+                                    border-brand-orange
                                     hover:bg-brand-orange  
                                     hover:font-bold
                                     hover:text-white

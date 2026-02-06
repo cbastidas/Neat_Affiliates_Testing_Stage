@@ -16,7 +16,7 @@ export default function HomeHero({ onSignup, onScrollNext }: Props) {
       id="HomeHero"
       className="relative rounded-2xl isolate overflow-hidden bg-white pt-24 pb-10 sm:pt-32 sm:pb-16
                  font-bold
-                 hover:scale-110 hover:z-20 hover:shadow-2xl
+                 hover:shadow-2xl
                  border-2 border-transparent
                  transition
                  duration-300"
@@ -34,7 +34,7 @@ export default function HomeHero({ onSignup, onScrollNext }: Props) {
         <div className="mt-6 sm:mt-8 flex justify-center">
           <button
             onClick={onSignup}
-            className="font-extrabold sm:text-lg lg:text-lg rounded-xl bg-brand-purple-600 px-6 py-3 text-white hover:bg-brand-purple-700 hover:font-extrabold transition"
+            className="font-extrabold sm:text-lg lg:text-lg rounded-xl bg-brand-purple-600 px-6 py-3 text-white hover:bg-brand-orange transition"
           >
             Register Now and Start Earning
           </button>
@@ -43,8 +43,9 @@ export default function HomeHero({ onSignup, onScrollNext }: Props) {
         <button
             onClick={onScrollNext}
             className="font-extrabold rounded-xl border px-5 py-2 sm:px-6 sm:py-3 
-                       bg-brand-orange
-                       text-white hover:bg-brand-orange-700
+                       bg-white
+                       border border-brand-orange
+                       text-black hover:bg-brand-orange hover:text-white
                        transition-all duration-300
                        "
             aria-label="Scroll to next section"
