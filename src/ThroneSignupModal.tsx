@@ -95,29 +95,29 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
                     {/* EVERYTHING HERE STAYS EXACTLY AS REALM — NO CHANGES */}
 
                     <div className="flex flex-col col-span-2">
-                        <label className="font-bold text-brand-purple">* Login username</label>
+                        <label className="font-bold text-black">* Login username</label>
                         <input className="border rounded text-black p-2" type="text" />
                         <small className="text-brand-orange font-semibold">Please ensure your username contains only letters, numbers and underscores.</small>
                     </div>
 
                     <div className="flex flex-col col-span-2">
-                        <label className="font-bold text-brand-purple">* Login password</label>
+                        <label className="font-bold text-brand-black">* Login password</label>
                         <input className="border rounded text-black p-2" type="password" />
                         <small className="text-brand-orange font-semibold">Must contain one uppercase letter and one number.</small>
                     </div>
 
                     <div className="flex flex-col col-span-2">
-                        <label className="font-bold text-brand-purple">* Confirm password</label>
+                        <label className="font-bold text-brand-black">* Confirm password</label>
                         <input className="border rounded text-black p-2" type="password" />
                     </div>
 
                     <div className="flex flex-col col-span-2">
-                        <label className="font-bold text-brand-purple">* Email address</label>
+                        <label className="font-bold text-brand-black">* Email address</label>
                         <input className="border rounded text-black p-2" type="email" />
                     </div>
 
                     <div className="flex flex-col col-span-2">
-                        <label className="font-bold text-brand-purple">* Country</label>
+                        <label className="font-bold text-brand-black">* Country</label>
                         <select className="border rounded text-gray-600 p-2">
                             <option value="">Select a country</option>
                             <option>Malta</option>
@@ -130,63 +130,63 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
                     {/* Newsletter */}
                     <div className="flex items-center gap-2 mt-6">
                         <input type="checkbox" />
-                        <label className="text-brand-purple font-semibold">Email subscription</label>
+                        <label className="text-black font-semibold">Email subscription</label>
                     </div>
 
                     <div className="flex flex-col col-span-2">
-                        <label className="font-bold text-brand-purple">* First Name</label>
+                        <label className="font-bold text-black">* First Name</label>
                         <input className="border rounded text-black p-2 font-semibold" type="text" />
                     </div>
 
                     <div className="flex flex-col col-span-2">
-                        <label className="font-bold text-brand-purple">* Last Name</label>
+                        <label className="font-bold text-black">* Last Name</label>
                         <input className="border rounded text-black p-2 font-semibold" type="text" />
                     </div>
 
                     <div className="flex flex-col col-span-2">
-                        <label className="font-bold text-brand-purple">* Date of Birth</label>
+                        <label className="font-bold text-black">* Date of Birth</label>
                         <input className="border rounded text-gray-600 p-2 font-semibold" type="date" />
                     </div>
 
                     <div className="flex flex-col col-span-2">
-                        <label className="font-bold text-brand-purple">* Skype</label>
+                        <label className="font-bold text-black">* Skype</label>
                         <input className="border rounded text-black p-2 font-semibold" type="text" />
                     </div>
 
                     <div className="flex flex-col col-span-2">
-                        <label className="font-bold text-brand-purple">* Telegram</label>
+                        <label className="font-bold text-black">* Telegram</label>
                         <input className="border rounded text-black p-2 font-semibold" type="text" />
                     </div>
 
                     <div className="flex flex-col col-span-2">
-                        <label className="font-bold text-brand-purple">* Street Address</label>
+                        <label className="font-bold text-black">* Street Address</label>
                         <input className="border rounded text-black p-2 font-semibold" type="text" />
                     </div>
 
                     <div className="flex flex-col col-span-2">
-                        <label className="font-bold text-brand-purple">* City</label>
+                        <label className="font-bold text-black">* City</label>
                         <input className="border rounded text-black p-2 font-semibold" type="text" />
                     </div>
 
                     <div className="flex flex-col col-span-2">
-                        <label className="font-bold text-brand-purple">* Company</label>
+                        <label className="font-bold text-black">* Company</label>
                         <input className="border rounded text-black p-2 font-semibold" type="text" />
                     </div>
 
                     <div className="flex flex-col col-span-2">
-                        <label className="font-bold text-brand-purple">* Phone</label>
+                        <label className="font-bold text-black">* Phone</label>
                         <input className="border rounded text-black p-2 font-semibold" type="text" />
                     </div>
 
                     <div className="flex flex-col col-span-2">
-                        <label className="font-bold text-brand-purple">* Site URL</label>
+                        <label className="font-bold text-black">* Site URL</label>
                         <input className="border rounded text-black p-2 font-semibold" type="text" />
                     </div>
 
 
                     {/* PAYMENT INSTRUCTIONS — SAME AS REALM */}
                     <div className="col-span-2 mt-6">
-                        <h3 className="font-semibold mb-2 text-brand-purple">Payment Instructions</h3>
+                        <h3 className="font-extrabold mb-2 text-black">Payment Instructions</h3>
 
                         <label className="font-semibold text-brand-orange">* Choose a payment method</label>
 
@@ -240,15 +240,15 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
                         {/* JETBAHIS SECTION */}
                         {paymentMethod === 'jetbahis' && (
                             <div className="mt-6 p-4 border rounded-lg bg-purple">
-                                <h4 className="font-bold text-brand-purple mb-1">
+                                <h4 className="font-bold text-black mb-1">
                                     Jetbahis Player Account payment instructions
                                 </h4>
-                                <p className="text-sm font-semibold text-brand-purple mb-4">Insert the details</p>
+                                <p className="text-sm font-semibold text-black mb-4">Insert the details</p>
 
                                 <div className="grid grid-cols-1 gap-4">
                                     <div className="flex flex-col">
                                         <label className="font-semibold text-brand-orange">* Jetbahis Account Email</label>
-                                        <textarea className="border border-brand-orange rounded p-2 font-bold" rows={3}></textarea>
+                                        <textarea className="border rounded p-2 font-semibold" rows={3}></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -257,25 +257,25 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
                         {/* CRYPTO SECTION */}
                         {paymentMethod === 'crypto' && (
                             <div className="mt-6 p-4 border rounded-lg bg-white">
-                                <h4 className="font-bold text-brand-purple mb-1">
+                                <h4 className="font-bold text-black mb-1">
                                     Crypto payment instructions
                                 </h4>
-                                <p className="text-sm font-semibold text-brand-purple mb-4">
+                                <p className="text-sm font-semibold text-black mb-4">
                                     Please enter your crypto wallet details. Types accepted BTC, ETH, USDT, USDC.
                                 </p>
 
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div className="flex flex-col">
                                         <label className="font-semibold text-brand-orange">* Method of Payment</label>
-                                        <textarea className="border border-brand-orange rounded p-2 font-semibold" rows={3}></textarea>
+                                        <textarea className="border rounded p-2 font-semibold" rows={3}></textarea>
                                     </div>
                                     <div className="flex flex-col">
                                         <label className="font-semibold text-brand-orange">* Wallet Address</label>
-                                        <textarea className="border border-brand-orange rounded p-2 font-semibold" rows={3}></textarea>
+                                        <textarea className="border rounded p-2 font-semibold" rows={3}></textarea>
                                     </div>
                                     <div className="flex flex-col">
                                         <label className="font-semibold text-brand-orange">* Beneficiary Name/Wallet Owner</label>
-                                        <textarea className="border border-brand-orange rounded p-2 font-semibold" rows={3}></textarea>
+                                        <textarea className="border rounded p-2 font-semibold" rows={3}></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -284,22 +284,22 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
                         {/* PAPEL SECTION */}
                         {paymentMethod === 'papel' && (
                             <div className="mt-6 p-4 border rounded-lg bg-white">
-                                <h4 className="font-bold text-brand-purple mb-1">
+                                <h4 className="font-bold text-black mb-1">
                                     Papel payment instructions
                                 </h4>
-                                <p className="text-sm font-semibold text-brand-purple mb-4">
+                                <p className="text-sm font-semibold text-black mb-4">
                                     Please fill in your payment details
                                 </p>
 
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div className="flex flex-col">
                                         <label className="font-semibold text-brand-orange">* Name Surname</label>
-                                        <textarea className="border border-brand-orange rounded p-2 font-semibold" rows={3}></textarea>
+                                        <textarea className="border rounded p-2 font-semibold" rows={3}></textarea>
                                     </div>
 
                                     <div className="flex flex-col">
                                         <label className="font-semibold text-brand-orange">* Papel Wallet ID</label>
-                                        <textarea className="border border-brand-orange rounded p-2 font-semibold" rows={3}></textarea>
+                                        <textarea className="border  rounded p-2 font-semibold" rows={3}></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -308,10 +308,10 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
                         {/* BANK TRANSFER SECTION */}
                         {paymentMethod === 'bank' && (
                             <div className="mt-6 p-4 border rounded-lg bg-white">
-                                <h4 className="font-bold text-brand-purple mb-1">
+                                <h4 className="font-bold text-black mb-1">
                                     Bank Wire Transfer payment instructions
                                 </h4>
-                                <p className="text-sm font-semibold text-brand-purple mb-4">
+                                <p className="text-sm font-semibold text-black mb-4">
                                     Please enter your bank details
                                 </p>
 
@@ -319,47 +319,47 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
 
                                     <div className="flex flex-col">
                                         <label className="font-semibold text-brand-orange">* Account Number</label>
-                                        <textarea className="border border-brand-orange rounded p-2 font-semibold"></textarea>
+                                        <textarea className="border rounded p-2 font-semibold"></textarea>
                                     </div>
 
                                     <div className="flex flex-col">
-                                        <label className="font-semibold text-brand-orange">Bank City</label>
-                                        <textarea className="border border-brand-orange rounded p-2 font-semibold"></textarea>
+                                        <label className="font-semibold text-black">Bank City</label>
+                                        <textarea className="border rounded p-2 font-semibold"></textarea>
                                     </div>
 
                                     <div className="flex flex-col">
-                                        <label className="font-semibold text-brand-orange">Bank Country</label>
-                                        <textarea className="border border-brand-orange rounded p-2 font-semibold"></textarea>
+                                        <label className="font-semibold text-black">Bank Country</label>
+                                        <textarea className="border rounded p-2 font-semibold"></textarea>
                                     </div>
 
                                     <div className="flex flex-col">
                                         <label className="font-semibold text-brand-orange">* IBAN</label>
-                                        <textarea className="border border-brand-orange rounded p-2 font-semibold"></textarea>
+                                        <textarea className="border rounded p-2 font-semibold"></textarea>
                                     </div>
 
                                     <div className="flex flex-col">
                                         <label className="font-semibold text-brand-orange">* Bank Name</label>
-                                        <textarea className="border border-brand-orange rounded p-2 font-semibold"></textarea>
+                                        <textarea className="border rounded p-2 font-semibold"></textarea>
                                     </div>
 
                                     <div className="flex flex-col">
-                                        <label className="font-semibold text-brand-orange">Bank Other</label>
-                                        <textarea className="border border-brand-orange rounded p-2 font-semibold"></textarea>
+                                        <label className="font-semibold text-black">Bank Other</label>
+                                        <textarea className="border rounded p-2 font-semibold"></textarea>
                                     </div>
 
                                     <div className="flex flex-col">
                                         <label className="font-semibold text-brand-orange">* Bank Street</label>
-                                        <textarea className="border border-brand-orange rounded p-2 font-semibold"></textarea>
+                                        <textarea className="border rounded p-2 font-semibold"></textarea>
                                     </div>
 
                                     <div className="flex flex-col">
                                         <label className="font-semibold text-brand-orange">* BIC/ABA/SWIFT Code</label>
-                                        <textarea className="border border-brand-orange rounded p-2 font-semibold"></textarea>
+                                        <textarea className="border rounded p-2 font-semibold"></textarea>
                                     </div>
 
                                     <div className="flex flex-col">
                                         <label className="font-semibold text-brand-orange">* Bank Zip/Post Code</label>
-                                        <textarea className="border border-brand-orange rounded p-2 font-semibold"></textarea>
+                                        <textarea className="border rounded p-2 font-semibold"></textarea>
                                     </div>
 
                                 </div>
@@ -371,7 +371,7 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
                     {/* Invoicing Options */}
 <div className="col-span-2 mt-8">
                     
-  <h3 className="font-bold mb-2 text-brand-orange">Invoicing Options</h3>
+  <h3 className="font-bold mb-2 text-black">Invoicing Options</h3>
                     
   <div className="flex items-center gap-2 mt-2">
     <input 
@@ -386,8 +386,8 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
 
     {/* Biller details */}
     <div className="flex flex-col md:col-span-1">
-      <label className="font-semibold text-brand-orange">* Biller details</label>
-      <p className="text-sm text-black font-semibold mb-1">
+      <label className="font-extrabold text-black">* Biller details</label>
+      <p className="text-sm text-gray-600 font-semibold mb-1">
         Invoice header example:<br/>
         Affiliate Inc.<br/>
         123 Example Street,<br/>
@@ -395,7 +395,7 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
         ABN: 123 456 789 0
       </p>
       <textarea 
-        className="border rounded p-2 w-full text-gray-600 border-brand-orange"
+        className="border rounded p-2 w-full text-gray-600"
         rows={5}
         disabled={!autoInvoice}
       ></textarea>
@@ -404,11 +404,11 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
     {/* Default Tax Details */}
     <div className="flex flex-col md:col-span-1">
       
-      <h3 className="font-semibold mb-2 text-brand-orange mt-4 md:mt-0">Default tax details</h3>
+      <h3 className="font-bold mb-2 text-black mt-4 md:mt-0">Default tax details</h3>
 
-      <label className="font-semibold text-brand-orange border-brand-orange">* Tax name</label>
+      <label className="font-semibold text-black">* Tax name</label>
       <select 
-        className="border rounded text-gray-600 p-2 mb-4 border-brand-orange"
+        className="border rounded text-gray-600 p-2 mb-4"
         disabled={!autoInvoice}
       >
         <option value="">Select</option>
@@ -417,24 +417,24 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
         <option value="VAT">VAT</option>
       </select>
 
-      <label className="font-semibold text-brand-orange border-brand-orange">* Tax rate</label>
+      <label className="font-semibold text-black">* Tax rate</label>
       <div className="flex items-center gap-2 mb-4 text-gray-600">
         <input 
           type="number" 
-          className="border rounded p-2 w-full text-gray-600 border-brand-orange"
+          className="border rounded p-2 w-full text-gray-600"
           placeholder="0–100"
           disabled={!autoInvoice}
         />
-        <span className="font-semibold text-brand-orange">%</span>
+        <span className="font-semibold text-black">%</span>
       </div>
 
-      <label className="font-semibold text-brand-orange border-brand-orange">Tax note</label>
+      <label className="font-semibold text-black">Tax note</label>
       <input 
-        className="border rounded p-2 mb-2 border-brand-orange"
+        className="border rounded p-2 mb-2"
         type="text"
         disabled={!autoInvoice}
       />
-      <p className="text-sm text-brand-purple font-semibold">
+      <p className="text-sm text-black font-semibold">
         The tax note will appear beside the tax amount on the generated invoice.
       </p>
 
@@ -445,7 +445,7 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
                                             {/* Terms of use */}
                     <div className="col-span-2 mt-4">
                         <label className="font-bold text-brand-orange">* Terms of use</label>
-                        <p className="text-sm text-brand-orange font-semibold">
+                        <p className="text-sm text-black font-semibold">
                             Please read the Terms of Use before agreeing.
                         </p>
 
