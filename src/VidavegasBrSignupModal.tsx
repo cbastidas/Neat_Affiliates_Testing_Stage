@@ -210,15 +210,37 @@ const VidavegasBrSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
             </div>
           </div>
 
-          {/* Terms */}
-          <div className="md:col-span-2 mt-4">
-            <label className="font-bold text-brand-orange">* Terms & Conditions</label>
+                            {/* Terms of Use */}
+                    <div className="col-span-2 mt-4">
+                      <label className="font-semibold text-brand-orange">* Terms of use</label>
+                      <p className="text-sm text-gray-600">
+                        Please read the{" "}
+                        <a 
+                          href="https://example.com" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-brand-purple underline transition hover:text-brand-purple-700"
+                        >
+                          Terms of Use
+                        </a>{" "}
+                        before agreeing.
+                      </p>
 
-            <div className="flex items-center gap-2 mt-1 font-semibold text-black">
-              <input type="checkbox" />
-              <span>I agree to the terms and conditions</span>
-            </div>
-          </div>
+                      <div className="flex items-center gap-2 mt-2">
+                        <input type="checkbox" />
+                        <label className="text-sm">
+                          I agree with the NeatAffiliates{" "}
+                          <a
+                            href="https://example.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-brand-purple underline transition hover:text-brand-purple-700"
+                          >
+                            Terms of Use
+                          </a>
+                        </label>
+                      </div>
+                    </div>
 
           {/* Submit */}
           <div className="md:col-span-2 flex justify-center mt-6">

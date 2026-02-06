@@ -451,17 +451,36 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
   </div>
 </div>
 
-                                            {/* Terms of use */}
+                                      {/* Terms of Use */}
                     <div className="col-span-2 mt-4">
-                        <label className="font-bold text-brand-orange">* Terms of use</label>
-                        <p className="text-sm text-black font-semibold">
-                            Please read the Terms of Use before agreeing.
-                        </p>
+                      <label className="font-semibold text-brand-orange">* Terms of use</label>
+                      <p className="text-sm text-gray-600">
+                        Please read the{" "}
+                        <a 
+                          href="https://example.com" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-brand-purple underline transition hover:text-brand-purple-700"
+                        >
+                          Terms of Use
+                        </a>{" "}
+                        before agreeing.
+                      </p>
 
-                        <div className="flex items-center gap-2 mt-2 text-brand-orange font-semibold">
-                            <input type="checkbox" />
-                            <label className="text-sm font-semibold">I agree with the NeatAffiliates Terms of Use</label>
-                        </div>
+                      <div className="flex items-center gap-2 mt-2">
+                        <input type="checkbox" />
+                        <label className="text-sm">
+                          I agree with the NeatAffiliates{" "}
+                          <a
+                            href="https://example.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-brand-purple underline transition hover:text-brand-purple-700"
+                          >
+                            Terms of Use
+                          </a>
+                        </label>
+                      </div>
                     </div>
 
                     {/* Submit */}

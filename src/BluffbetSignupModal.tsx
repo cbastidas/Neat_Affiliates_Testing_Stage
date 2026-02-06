@@ -44,27 +44,36 @@ const BluffbetSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
 
   return (
     <div
-      className="fixed inset-0 bg-black/40 z-[9999] flex items-center justify-center px-4"
+      className="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50"
       onClick={(e) => e.target === e.currentTarget && onClose()}
     >
       {/* Modal container */}
-      <div className="bg-white w-full max-w-3xl max-h-[88vh] overflow-y-auto rounded-2xl shadow-xl p-8 relative">
+      <div className="bg-white 
+                  w-[95%] max-w-4xl max-h-[90vh] 
+                  overflow-y-auto 
+                  rounded-2xl 
+                  shadow-xl 
+                  p-6 
+                  md:p-8 
+                  relative 
+                  overflow-x-hidden 
+                  box-border">
 
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-2xl text-gray-600 hover:text-gray-900"
+          className="absolute font-extrabold top-4 right-4 text-4xl text-brand-purple hover:scale-150 transition"
         >
           ×
         </button>
 
         {/* Header Title */}
-        <h2 className="text-center text-3xl font-semibold mb-4">
+        <h2 className="text-center text-3xl font-bold text-brand-purple mb-6">
           Create Your Affiliate Account
         </h2>
 
         {/* Header Subtitle */}
-        <p className="text-center text-gray-600 mb-6">
+        <p className="text-center font-semibold text-black mb-8">
           Please fill in the form below to create your account for the brand shown below.
         </p>
 
@@ -74,7 +83,7 @@ const BluffbetSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
             <img
               src={logo}
               alt="Bluffbet"
-              className="h-14 w-auto object-contain"
+              className="h-10 md:h-12 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform"
             />
           )}
         </div>
@@ -84,43 +93,43 @@ const BluffbetSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
 
           {/* Login Username */}
           <div className="flex flex-col">
-            <label className="font-semibold">* Login username</label>
-            <small className="text-gray-500">
+            <label className="font-bold text-black">* Login username</label>
+            <small className="text-brand-orange font-semibold">
               Please ensure your username contains only letters, numbers, hyphens (-), and underscores (_).
             </small>
-            <input type="text" className="border rounded p-2 mt-1" />
+            <input type="text" className="border rounded p-2 mt-1 font-semibold" />
           </div>
 
           {/* Login Password */}
           <div className="flex flex-col">
-            <label className="font-semibold">* Login password</label>
-            <small className="text-gray-500">
+            <label className="font-bold text-black">* Login password</label>
+            <small className="text-brand-orange font-semibold">
               Must contain at least one lowercase letter, one digit, and one uppercase letter.
             </small>
-            <input type="password" className="border rounded p-2 mt-1" />
+            <input type="password" className="border rounded p-2 mt-1 font-semibold" />
           </div>
 
           {/* Confirm Password */}
           <div className="flex flex-col">
-            <label className="font-semibold">* Confirm password</label>
-            <input type="password" className="border rounded p-2" />
+            <label className="font-bold text-black">* Confirm password</label>
+            <input type="password" className="border rounded p-2 font-semibold" />
           </div>
 
           {/* Email Address */}
           <div className="flex flex-col">
-            <label className="font-semibold">* Email address</label>
-            <input type="email" className="border rounded p-2" />
+            <label className="font-bold text-black">* Email address</label>
+            <input type="email" className="border rounded p-2 font-semibold" />
           </div>
 
           {/* Newsletter */}
           <div className="flex items-center mt-2 gap-2">
             <input type="checkbox" />
-            <label>Email subscription</label>
+            <label className="text-black font-semibold">Email subscription</label>
           </div>
 
           {/* Country */}
           <div className="flex flex-col">
-            <label className="font-semibold">* Country</label>
+            <label className="font-bold text-black">* Country</label>
             <select className="border rounded p-2">
               <option>Select a country</option>
             </select>
@@ -128,93 +137,114 @@ const BluffbetSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
 
           {/* First Name */}
           <div className="flex flex-col">
-            <label className="font-semibold">* First Name</label>
-            <input className="border rounded p-2" type="text" />
+            <label className="font-bold text-black">* First Name</label>
+            <input className="border rounded p-2 font-semibold" type="text" />
           </div>
 
           {/* Last Name */}
           <div className="flex flex-col">
-            <label className="font-semibold">* Last Name</label>
-            <input className="border rounded p-2" type="text" />
+            <label className="font-bold text-black">* Last Name</label>
+            <input className="border rounded p-2 font-semibold" type="text" />
           </div>
 
           {/* Date of Birth */}
           <div className="flex flex-col">
-            <label className="font-semibold">Date of birth</label>
-            <input className="border rounded p-2" type="date" />
+            <label className="font-bold text-black">Date of birth</label>
+            <input className="border rounded p-2 font-semibold" type="date" />
           </div>
 
           {/* Address */}
           <div className="flex flex-col md:col-span-2">
-            <label className="font-semibold">Address</label>
-            <textarea className="border rounded p-2" rows={3}></textarea>
+            <label className="font-bold text-black">Address</label>
+            <textarea className="border rounded p-2 font-semibold" rows={3}></textarea>
           </div>
 
           {/* Zip Code */}
           <div className="flex flex-col">
-            <label className="font-semibold">Zip code</label>
-            <input className="border rounded p-2" />
+            <label className="font-bold text-black">Zip code</label>
+            <input className="border rounded p-2 font-semibold" />
           </div>
 
           {/* Company Name */}
           <div className="flex flex-col">
-            <label className="font-semibold">* Company Name</label>
-            <input className="border rounded p-2" />
+            <label className="font-bold text-black">* Company Name</label>
+            <input className="border rounded p-2 font-semibold" />
           </div>
 
           {/* Mobile Number */}
           <div className="flex flex-col">
-            <label className="font-semibold">* Mobile Number</label>
-            <input className="border rounded p-2" />
+            <label className="font-bold text-black">* Mobile Number</label>
+            <input className="border rounded p-2 font-semibold" />
           </div>
 
           {/* Telegram/Teams */}
           <div className="flex flex-col">
-            <label className="font-semibold">Telegram/Teams</label>
-            <input className="border rounded p-2" />
+            <label className="font-bold text-black">Telegram/Teams</label>
+            <input className="border rounded p-2 font-semibold" />
           </div>
 
           {/* Website URL */}
           <div className="flex flex-col">
-            <label className="font-semibold">* Website URL/s</label>
-            <input className="border rounded p-2" />
+            <label className="font-bold text-black">* Website URL/s</label>
+            <input className="border rounded p-2 font-semibold" />
           </div>
 
           {/* Marketing Method */}
           <div className="md:col-span-2 flex flex-col w-full">
-            <label className="font-semibold">* How will you market us?</label>
+            <label className="font-bold text-black">* How will you market us?</label>
             <div className="flex flex-wrap gap-x-6 gap-y-2">
-              <label className="flex items-center gap-2">
+              <label className="flex items-center gap-2 font-semibold">
                 <input type="radio" name="market" /> Website
               </label>
-              <label className="flex items-center gap-2">
+              <label className="flex items-center gap-2 font-semibold">
                 <input type="radio" name="market" /> Offline
               </label>
-              <label className="flex items-center gap-2">
+              <label className="flex items-center gap-2 font-semibold">
                 <input type="radio" name="market" /> Email
               </label>
-              <label className="flex items-center gap-2">
+              <label className="flex items-center gap-2 font-semibold">
                 <input type="radio" name="market" /> Other
               </label>
             </div>
           </div>
 
-          {/* Terms and Conditions */}
-          <div className="md:col-span-2 mt-4">
-            <label className="font-semibold text-red-600">* Terms & Conditions</label>
+                  {/* Terms of Use */}
+                    <div className="col-span-2 mt-4">
+                      <label className="font-semibold text-brand-orange">* Terms of use</label>
+                      <p className="text-sm text-gray-600">
+                        Please read the{" "}
+                        <a 
+                          href="https://example.com" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-brand-purple underline transition hover:text-brand-purple-700"
+                        >
+                          Terms of Use
+                        </a>{" "}
+                        before agreeing.
+                      </p>
 
-            <div className="flex items-center gap-2 mt-1">
-              <input type="checkbox" />
-              <span>I agree to the terms and conditions</span>
-            </div>
-          </div>
+                      <div className="flex items-center gap-2 mt-2">
+                        <input type="checkbox" />
+                        <label className="text-sm">
+                          I agree with the NeatAffiliates{" "}
+                          <a
+                            href="https://example.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-brand-purple underline transition hover:text-brand-purple-700"
+                          >
+                            Terms of Use
+                          </a>
+                        </label>
+                      </div>
+                    </div>
 
-          {/* Recaptcha + Submit */}
-          <div className="md:col-span-2 flex flex-col items-center mt-6">
-
+          {/* Submit */}
+          <div className="md:col-span-2 flex justify-center mt-6">
             <button
               type="submit"
-              className="font-semibold bg-purple-700 hover:bg-yellow-600 text-white px-10 py-3 rounded-full"
+              className="font-extrabold text-xl bg-brand-purple hover:bg-brand-orange hover:scale-110 text-white px-10 py-3 rounded-xl transition"
             >
               Signup
             </button>
@@ -222,14 +252,14 @@ const BluffbetSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
 
           {/* Support Section */}
             <div className="md:col-span-2 mt-8 justify-start">
-              <h2 className="text-xl font-semibold mb-2">Support</h2>
+              <h2 className="text-xl text-center font-bold text-brand-orange mb-2">Support</h2>
 
               <div className="flex flex-col justify-start gap-1">
 
                 {/* Email */}
                 <a
                   href="mailto:bluffbet@neataffiliates.com"
-                  className="flex items-center gap-2 text-purple-700 hover:text-purple-900 text-lg font-medium"
+                  className="flex w-fit items-center gap-2 text-brand-purple hover:underline transition text-lg font-medium"
                 >
                   <span className="text-2xl">📧</span>
                   Email: bluffbet@neataffiliates.com
