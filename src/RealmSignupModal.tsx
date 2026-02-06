@@ -75,18 +75,18 @@ useEffect(() => {
 
                 {/* Close button */}
                 <button 
-                    className="absolute top-4 right-4 text-black text-2xl"
+                    className="text-brand-purple text-4xl font-bold absolute top-3 right-3 hover:scale-150 transition hover:text-brand-purple hover:font-extrabold"
                     onClick={onClose}
                 >
                     ×
                 </button>
 
                 {/* Modal Title */}
-                <h2 className="text-center text-3xl font-semibold mb-6">
+                <h2 className="text-center text-3xl font-bold text-brand-purple mb-6">
                     Create Your Affiliate Account
                 </h2>
 
-                <p className="text-center text-gray-600 mb-8">
+                <p className="text-center text-black mb-8">
                     Please fill in the form below to create your account for the brands shown below.
                 </p>
 
@@ -97,7 +97,7 @@ useEffect(() => {
                         key={brand.id}
                         src={brand.logo_url}
                         alt={brand.name}
-                        className="h-10 md:h-12 w-auto object-contain flex-shrink-0"
+                        className="h-10 md:h-12 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform"
                       />
                   ))}
                 </div>
@@ -107,41 +107,41 @@ useEffect(() => {
 
                     {/* Login Username */}
                     <div className="flex flex-col col-span-2">
-                        <label className="font-semibold">
+                        <label className="font-bold text-black">
                             * Login username
                         </label>
                         <input 
-                            className="border rounded p-2"
+                            className="border rounded p-2 text-black"
                             type="text"
                             placeholder="Enter username"
                         />
-                        <small>
+                        <small className="text-brand-orange font-semibold">
                             Please ensure your username contains only letters, numbers and underscores.
                         </small>
                     </div>
 
                     {/* Password */}
                     <div className="flex flex-col col-span-2">
-                        <label className="font-semibold">
+                        <label className="font-bold text-brand-black">
                             * Login password
                         </label>
                         <input 
-                            className="border rounded p-2"
+                            className="border rounded p-2 text-black"
                             type="password"
                             placeholder="Enter password"
                         />
-                        <small>
+                        <small className="text-brand-orange font-semibold">
                             Must contain one uppercase letter and one number.
                         </small>
                     </div>
 
                     {/* Confirm Password */}
                     <div className="flex flex-col col-span-2">
-                        <label className="font-semibold">
+                        <label className="font-bold text-brand-black">
                             * Confirm password
                         </label>
                         <input 
-                            className="border rounded p-2"
+                            className="border rounded p-2 text-black"
                             type="password"
                             placeholder="Confirm password"
                         />
@@ -149,9 +149,9 @@ useEffect(() => {
 
                     {/* Email */}
                     <div className="flex flex-col col-span-2">
-                        <label className="font-semibold">* Email address</label>
+                        <label className="font-bold text-brand-black">* Email address</label>
                         <input 
-                            className="border rounded p-2"
+                            className="border rounded p-2 text-black"
                             type="email"
                             placeholder="your@email.com"
                         />
@@ -159,8 +159,8 @@ useEffect(() => {
 
                     {/* Country */}
                     <div className="flex flex-col col-span-2">
-                        <label className="font-semibold">* Country</label>
-                        <select className="border rounded p-2">
+                        <label className="font-bold text-brand-black">* Country</label>
+                        <select className="border rounded p-2 text-black">
                             <option value="">Select a country</option>
                             <option>Malta</option>
                             <option>Spain</option>
@@ -172,82 +172,82 @@ useEffect(() => {
                     {/* Newsletter */}
                     <div className="flex items-center gap-2 mt-6">
                         <input type="checkbox" />
-                        <label>Email subscription</label>
+                        <label className="text-black font-semibold">Email subscription</label>
                     </div>
 
                     {/* First Name */}
                     <div className="flex flex-col col-span-2">
-                        <label className="font-semibold">* First Name</label>
-                        <input className="border rounded p-2" type="text" />
+                        <label className="font-bold text-brand-black">* First Name</label>
+                        <input className="border rounded p-2 text-black" type="text" />
                     </div>
 
                     {/* Last Name */}
                     <div className="flex flex-col col-span-2">
-                        <label className="font-semibold">* Last Name</label>
-                        <input className="border rounded p-2" type="text" />
+                        <label className="font-bold text-brand-black">* Last Name</label>
+                        <input className="border rounded p-2 text-black" type="text" />
                     </div>
 
                     {/* Date of birth */}
                     <div className="flex flex-col col-span-2">
-                        <label className="font-semibold">* Date of Birth</label>
-                        <input className="border rounded p-2" type="date" />
+                        <label className="font-bold text-brand-black">* Date of Birth</label>
+                        <input className="border rounded p-2 text-black" type="date" />
                     </div>
 
                     {/* Teams */}
                     <div className="flex flex-col col-span-2">
-                        <label className="font-semibold">Teams (Skype)</label>
-                        <input className="border rounded p-2" type="text" />
+                        <label className="font-bold text-brand-black">Teams (Skype)</label>
+                        <input className="border rounded p-2 text-black" type="text" />
                     </div>
 
                     {/* Telegram */}
                     <div className="flex flex-col col-span-2">
-                        <label className="font-semibold">Telegram</label>
-                        <input className="border rounded p-2" type="text" />
+                        <label className="font-bold text-brand-black">Telegram</label>
+                        <input className="border rounded p-2 text-black" type="text" />
                     </div>
 
                     {/* Street */}
                     <div className="flex flex-col col-span-2">
-                        <label className="font-semibold">Street Address</label>
-                        <input className="border rounded p-2" type="text" />
+                        <label className="font-bold text-brand-black">Street Address</label>
+                        <input className="border rounded p-2 text-black" type="text" />
                     </div>
 
                     {/* City */}
                     <div className="flex flex-col col-span-2">
-                        <label className="font-semibold">City</label>
-                        <input className="border rounded p-2" type="text" />
+                        <label className="font-bold text-brand-black">City</label>
+                        <input className="border rounded p-2 text-black" type="text" />
                     </div>
 
                     {/* Company */}
                     <div className="flex flex-col col-span-2">
-                        <label className="font-semibold">Company</label>
-                        <input className="border rounded p-2" type="text" />
+                        <label className="font-bold text-brand-black">Company</label>
+                        <input className="border rounded p-2 text-black" type="text" />
                     </div>
 
                     {/* Phone */}
                     <div className="flex flex-col col-span-2">
-                        <label className="font-semibold">Phone</label>
-                        <input className="border rounded p-2" type="text" />
+                        <label className="font-bold text-brand-black">Phone</label>
+                        <input className="border rounded p-2 text-black" type="text" />
                     </div>
 
                     {/* Site URL */}
                     <div className="flex flex-col col-span-2">
-                        <label className="font-semibold">* Site URL</label>
-                        <input className="border rounded p-2" type="text" />
+                        <label className="font-bold text-brand-black">* Site URL</label>
+                        <input className="border rounded p-2 text-black" type="text" />
                     </div>
 
 
                     {/* Payment Instructions */}
                     <div className="col-span-2 mt-6">
 
-                      <h3 className="font-semibold mb-2 text-gray-800">Payment Instructions</h3>
+                      <h3 className="font-extrabold text-black">Payment Instructions</h3>
 
                       {/* Choose payment method */}
-                      <label className="font-semibold text-red-600">* Choose a payment method</label>
+                      <label className="font-semibold text-brand-orange">* Choose a payment method</label>
 
                       <div className="flex flex-col gap-2 mt-2">
 
                         {/* Bank Transfer */}
-                        <label className="flex items-center gap-2 cursor-pointer">
+                        <label className="flex text-black items-center gap-2 cursor-pointer">
                           <input
                             type="radio"
                             name="payment"
@@ -258,7 +258,7 @@ useEffect(() => {
                         </label>
 
                         {/* Crypto */}
-                        <label className="flex items-center gap-2 cursor-pointer">
+                        <label className="flex text-black items-center gap-2 cursor-pointer">
                           <input
                             type="radio"
                             name="payment"
@@ -269,7 +269,7 @@ useEffect(() => {
                         </label>
 
                         {/* Papel Wallet */}
-                        <label className="flex items-center gap-2 cursor-pointer">
+                        <label className="flex text-black items-center gap-2 cursor-pointer">
                           <input
                             type="radio"
                             name="payment"
@@ -287,10 +287,10 @@ useEffect(() => {
                       {/* ------------------------------------------------------------------ */}
                       {paymentMethod === 'bank' && (
                         <div className="mt-6 p-4 border rounded-lg bg-gray-50">
-                          <h4 className="font-semibold text-gray-700 mb-1">
+                          <h4 className="font-bold text-black mb-1">
                             Bank Transfer payment details
                           </h4>
-                          <p className="text-sm text-gray-600 mb-4">
+                          <p className="text-sm font-semibold text-black mb-4">
                             Please insert all the necessary information
                           </p>
                     
@@ -298,26 +298,26 @@ useEffect(() => {
                     
                             {/* IBAN / Account number */}
                             <div className="flex flex-col">
-                              <label className="font-semibold text-red-600">* IBAN / Account number</label>
-                              <input className="border rounded p-2" type="text" />
+                              <label className="font-semibold text-brand-orange">* IBAN / Account number</label>
+                              <input className="border rounded p-2 text-black" type="text" />
                             </div>
                     
                             {/* Bank name */}
                             <div className="flex flex-col">
-                              <label className="font-semibold">Bank Name</label>
-                              <input className="border rounded p-2" type="text" />
+                              <label className="font-semibold text-black">Bank Name</label>
+                              <input className="border rounded p-2 text-black" type="text" />
                             </div>
                     
                             {/* Beneficiary name */}
                             <div className="flex flex-col">
-                              <label className="font-semibold text-red-600">* Beneficiary name</label>
-                              <input className="border rounded p-2" type="text" />
+                              <label className="font-semibold text-brand-orange">* Beneficiary name</label>
+                              <input className="border rounded p-2 text-black" type="text" />
                             </div>
                     
                             {/* SWIFT / BIC */}
                             <div className="flex flex-col">
-                              <label className="font-semibold">SWIFT / BIC</label>
-                              <input className="border rounded p-2" type="text" />
+                              <label className="font-semibold text-black">SWIFT / BIC</label>
+                              <input className="border rounded p-2 text-black" type="text" />
                             </div>
                           </div>
                         </div>
@@ -328,10 +328,10 @@ useEffect(() => {
                       {/* ------------------------------------------------------------------ */}
                       {paymentMethod === 'crypto' && (
                         <div className="mt-6 p-4 border rounded-lg bg-gray-50">
-                          <h4 className="font-semibold text-gray-700 mb-1">
+                          <h4 className="font-bold text-black mb-1">
                             Crypto payment details
                           </h4>
-                          <p className="text-sm text-gray-600 mb-4">
+                          <p className="text-sm text-black font-semibold mb-4">
                             Please enter your wallet information
                           </p>
                     
@@ -339,14 +339,14 @@ useEffect(() => {
                     
                             {/* Wallet Address */}
                             <div className="flex flex-col">
-                              <label className="font-semibold text-red-600">* Wallet Address</label>
-                              <input className="border rounded p-2" type="text" />
+                              <label className="font-semibold text-brand-orange">* Wallet Address</label>
+                              <input className="border rounded p-2 text-black" type="text" />
                             </div>
                     
                             {/* Network */}
                             <div className="flex flex-col">
-                              <label className="font-semibold text-red-600">* Network (BTC, ETH, TRC20, etc.)</label>
-                              <input className="border rounded p-2" type="text" />
+                              <label className="font-semibold text-brand-orange">* Network (BTC, ETH, TRC20, etc.)</label>
+                              <input className="border rounded p-2 text-black" type="text" />
                             </div>
                           </div>
                         </div>
@@ -357,10 +357,10 @@ useEffect(() => {
                       {/* ------------------------------------------------------------------ */}
                       {paymentMethod === 'papel' && (
                         <div className="mt-6 p-4 border rounded-lg bg-gray-50">
-                          <h4 className="font-semibold text-gray-700 mb-1">
+                          <h4 className="font-bold text-black mb-1">
                             Papel Wallet payment details
                           </h4>
-                          <p className="text-sm text-gray-600 mb-4">
+                          <p className="text-sm text-black font-semibold mb-4">
                             Please enter valid Papel wallet details
                           </p>
                     
@@ -368,14 +368,14 @@ useEffect(() => {
                     
                             {/* Account number */}
                             <div className="flex flex-col">
-                              <label className="font-semibold text-red-600">* Account number</label>
-                              <input className="border rounded p-2" type="text" />
+                              <label className="font-semibold text-brand-orange">* Account number</label>
+                              <input className="border rounded p-2 text-black" type="text" />
                             </div>
                     
                             {/* Affiliate name */}
                             <div className="flex flex-col">
-                              <label className="font-semibold text-red-600">* Affiliate name</label>
-                              <input className="border rounded p-2" type="text" />
+                              <label className="font-semibold text-brand-orange">* Affiliate name</label>
+                              <input className="border rounded p-2 text-black" type="text" />
                             </div>
                     
                           </div>
@@ -390,9 +390,9 @@ useEffect(() => {
                                     
                       <h3 className="font-semibold mb-2 text-gray-800">Invoicing Options</h3>
                                     
-                      <label className="font-semibold text-red-600">* Automatically generate payment invoices?</label>
+                      <label className="font-semibold text-brand-orange">* Automatically generate payment invoices?</label>
                                     
-                      <div className="flex items-center gap-2 mt-2">
+                      <div className="flex items-center gap-2 mt-2 text-black">
                         <input 
                           type="checkbox"
                           checked={autoInvoice}
@@ -405,8 +405,8 @@ useEffect(() => {
                       <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
                                     
                         <div className="flex flex-col md:col-span-1">
-                          <label className="font-semibold text-red-600">* Biller details</label>
-                          <p className="text-sm text-gray-600 mb-1">
+                          <label className="font-semibold text-brand-orange">* Biller details</label>
+                          <p className="text-sm font-semibold text-gray-600 mb-1">
                             Invoice header example:<br/>
                             Affiliate Inc.<br/>
                             123 Example Street,<br/>
@@ -426,7 +426,7 @@ useEffect(() => {
                           <h3 className="font-semibold mb-2 text-gray-800 mt-4 md:mt-0">Default tax details</h3>
                                     
                           {/* Tax name */}
-                          <label className="font-semibold text-red-600">* Tax name</label>
+                          <label className="font-semibold text-brand-orange">* Tax name</label>
                           <select 
                             className="border rounded p-2 mb-4"
                             disabled={!autoInvoice}
@@ -438,7 +438,7 @@ useEffect(() => {
                           </select>
                                     
                           {/* Tax rate */}
-                          <label className="font-semibold text-red-600">* Tax rate</label>
+                          <label className="font-semibold text-brand-orange">* Tax rate</label>
                           <div className="flex items-center gap-2 mb-4">
                             <input 
                               type="number" 
@@ -446,17 +446,17 @@ useEffect(() => {
                               placeholder="0–100"
                               disabled={!autoInvoice}
                             />
-                            <span className="font-semibold">%</span>
+                            <span className="font-semibold text-brand-orange">%</span>
                           </div>
                                     
                           {/* Tax note */}
-                          <label className="font-semibold">Tax note</label>
+                          <label className="font-semibold text-black">Tax note</label>
                           <input 
                             className="border rounded p-2 mb-2"
                             type="text"
                             disabled={!autoInvoice}
                           />
-                          <p className="text-sm text-gray-600">
+                          <p className="text-sm text-black font-semibold">
                             The tax note will appear beside the tax amount on the generated invoice.
                           </p>
                                     
@@ -466,14 +466,14 @@ useEffect(() => {
 
                                        {/* Terms of Use */}
                     <div className="col-span-2 mt-4">
-                      <label className="font-semibold text-red-600">* Terms of use</label>
+                      <label className="font-semibold text-brand-orange">* Terms of use</label>
                       <p className="text-sm text-gray-600">
                         Please read the{" "}
                         <a 
                           href="https://example.com" 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="text-purple-600 underline hover:text-purple-800"
+                          className="text-brand-purple underline transition hover:text-brand-purple-700"
                         >
                           Terms of Use
                         </a>{" "}
@@ -488,7 +488,7 @@ useEffect(() => {
                             href="https://example.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-purple-600 underline hover:text-purple-800"
+                            className="text-brand-purple underline transition hover:text-brand-purple-700"
                           >
                             Terms of Use
                           </a>
@@ -501,7 +501,7 @@ useEffect(() => {
                     <div className="col-span-2 mt-6 flex justify-center">
                         <button 
                             type="submit"
-                            className="font-semibold bg-purple-700 hover:bg-purple-800 text-white px-10 py-3 rounded-full"
+                            className="font-extrabold text-xl bg-brand-purple hover:bg-brand-orange hover:scale-110 text-white px-10 py-3 rounded-xl transition"
                         >
                             Signup
                         </button>
@@ -509,7 +509,7 @@ useEffect(() => {
 
                 {/* Support Section */}
                 <div className="md:col-span-2 mt-10">
-                  <h3 className="text-xl font-semibold mb-4 text-center">Support</h3>
+                  <h3 className="text-2xl font-bold text-brand-orange mb-4 text-center">Support</h3>
 
                   <div className="flex flex-col md:flex-row items-center justify-between gap-4">
 
@@ -518,7 +518,7 @@ useEffect(() => {
                       href="https://t.me/neat_affiliates"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-purple-700 hover:text-purple-900 text-lg font-medium"
+                      className="flex items-center gap-2 text-brand-purple hover:underline text-lg font-medium"
                     >
                       <span className="text-2xl">📨</span>
                       Telegram: @neat_affiliates
@@ -527,7 +527,7 @@ useEffect(() => {
                     {/* Email */}
                     <a
                       href="mailto:support@neataffiliates.com"
-                      className="flex items-center gap-2 text-purple-700 hover:text-purple-900 text-lg font-medium"
+                      className="flex items-center gap-2 text-brand-purple hover:underline text-lg font-medium"
                     >
                       <span className="text-2xl">📧</span>
                       Email: support@neataffiliates.com
