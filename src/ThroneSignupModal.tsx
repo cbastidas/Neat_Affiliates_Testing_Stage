@@ -59,7 +59,16 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
           }}
         >
 
-            <div className="bg-white w-[95%] max-w-4xl max-h-[90vh] overflow-y-scroll rounded-xl shadow-xl p-8 relative">
+            <div className="bg-white 
+                  w-[95%] max-w-4xl max-h-[90vh] 
+                  overflow-y-auto 
+                  rounded-2xl 
+                  shadow-xl 
+                  p-6 
+                  md:p-8 
+                  relative 
+                  overflow-x-hidden 
+                  box-border">
 
                 {/* Close button */}
                 <button

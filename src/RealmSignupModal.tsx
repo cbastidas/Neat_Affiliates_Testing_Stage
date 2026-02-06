@@ -86,7 +86,7 @@ useEffect(() => {
                     Create Your Affiliate Account
                 </h2>
 
-                <p className="text-center text-black mb-8">
+                <p className="text-center font-semibold text-black mb-8">
                     Please fill in the form below to create your account for the brands shown below.
                 </p>
 
