@@ -76,10 +76,10 @@ export default function WhyJoin() {
           {/* ------------------------------------------------------------
               Section Header
           ------------------------------------------------------------ */}
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">
+          <h2 className="text-4xl font-extrabold text-center cursor-default select-none text-brand-purple mb-4">
             Why Join Neat Affiliates?
           </h2>
-          <p className="text-center text-gray-500 mb-8  transition">
+          <p className="text-center text-black mb-8 transition">
             Top reasons why affiliates love working with us
           </p>
 

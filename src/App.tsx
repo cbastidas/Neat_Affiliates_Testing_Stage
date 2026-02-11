@@ -197,7 +197,7 @@ const showLess = (groupName: string) => {
     <div className="font-sans min-h-screen bg-gray-50 scroll-smooth">
       {/* Navbar */}
 
-<nav className="fixed top-0 left-0 w-full bg-white shadow z-20 px-6 pt-2 pb-2 flex justify-between items-center">
+<nav className="fixed top-0 left-0 w-full bg-brand-orange shadow z-20 px-6 pt-2 pb-2 flex justify-between items-center">
 
   {/* Logo - Takes to TOP */}
   <div 
@@ -230,7 +230,7 @@ const showLess = (groupName: string) => {
   </div>
 
 {/* Desktop nav */}
-<div className="font-bold hidden md:flex flex-wrap gap-1 justify-end w-full max-w-full">
+<div className="font-bold hidden md:flex flex-wrap gap-1 justify-end w-full max-w-full text-white">
 
   {[
     'WhyJoin',
@@ -249,9 +249,9 @@ const showLess = (groupName: string) => {
         scrollToSection(id);
       }
     }}
-    className="text-black font-extrabold text-base px-3 py-2 rounded-xl border border-transparent
+    className="text-white font-extrabold text-base px-3 py-2 rounded-xl border border-transparent
     hover:border-brand-orange
-    hover:text-brand-orange
+    hover:text-brand-purple
     transition-all duration-300"
     >
     {id.replace(/([A-Z])/g, ' $1').trim()}
@@ -260,14 +260,14 @@ const showLess = (groupName: string) => {
 
   <button
     onClick={() => setModalType('signup')}
-    className="bg-brand-purple font-extrabold text-white px-3 py-0 rounded hover:bg-brand-orange"
+    className="bg-brand-purple font-extrabold text-white px-3 py-0 rounded hover:bg-white hover:text-brand-purple"
   >
     Register
   </button>
 
   <button
     onClick={() => setModalType('login')}
-    className="text-black px-3 py-0 rounded font-extrabold border border-brand-orange hover:bg-brand-orange hover:text-white"
+    className="text-white px-3 py-0 rounded font-extrabold border border-brand-purple hover:bg-brand-purple hover:text-white"
   >
     Login
   </button>
@@ -291,7 +291,7 @@ const showLess = (groupName: string) => {
       <button
         key={id}
         onClick={() => scrollToSection(id)}
-        className="block w-full text-left text-gray-700 py-2 px-2 rounded hover:bg-gray-100"
+        className="block w-full text-left text-white py-2 px-2 rounded hover:bg-gray-100"
       >
         {label}
       </button>

@@ -49,7 +49,7 @@ export default function Faq({ onSignup }: FaqProps) {
         {categories.map((cat) => (
           <button 
             key={cat} 
-            className={`px-4 py-2 rounded-xl ${activeCategory === cat ? 'bg-brand-purple-600 font-semibold text-white hover:bg-brand-purple-800 hover:font-bold' : 'bg-brand-orange-300 font-semibold text-white hover:font-bold hover:bg-brand-orange  '}`} 
+            className={`px-4 py-2 rounded-xl ${activeCategory === cat ? 'bg-brand-purple font-bold text-white hover:font-bold' : 'bg-brand-orange text-white hover:scale-105 transition  hover:bg-brand-orange  '}`} 
             onClick={() => setActiveCategory(cat)}
           >
             {cat}

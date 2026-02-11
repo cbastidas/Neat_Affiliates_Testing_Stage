@@ -159,7 +159,7 @@ export default function Testimonials() {
       transition duration-300
       rounded-2xl"
     >
-      <h2 className="text-4xl font-bold mb-4 text-brand-purple-700">✨ Testimonials</h2>
+      <h2 className="text-4xl font-bold mb-4 text-brand-purple-700">Testimonials</h2>
       <p className="text-base text-gray-600 mb-6 transition">
         Here is what our partners say about us.
       </p>
