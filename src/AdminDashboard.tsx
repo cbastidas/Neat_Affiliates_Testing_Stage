@@ -262,25 +262,25 @@ export default function AdminDashboard() {
         {/* CONTACT */}
         <section ref={contactRef}>
           <SectionVisibilityToggle sectionKey="contact_section" size="md" />
-          <h2 className="text-2xl font-bold text-center mb-6">📬 Contact Admin Editor</h2>
+          <h2 className="text-2xl font-bold text-center mb-6">Contact Admin Editor</h2>
           <ContactEditor />
         </section>
 
         {/* FAQ */}
         <section ref={faqRef}>
-          <h2 className="text-2xl font-bold text-center mb-6">❓ FAQ Admin Editor</h2>
+          <h2 className="text-2xl font-bold text-center mb-6">FAQ Admin Editor</h2>
           <FaqEditor />
         </section>
 
         {/* ✅ TESTIMONIALS MANAGER INSIDE ADMIN DASHBOARD */}
         <section ref={testimonialsRef}>
-          <h2 className="text-2xl font-bold text-center mb-6">✨ Testimonials Admin Manager</h2>
+          <h2 className="text-2xl font-bold text-center mb-6">Testimonials Admin Manager</h2>
           <TestimonialsEditor />
         </section>
 
         {/* LOGIN / SIGNUP */}
         <section ref={loginRef}>
-          <h2 className="text-2xl font-bold text-center mb-6">🔐 Login/Signup Admin Editor</h2>
+          <h2 className="text-2xl font-bold text-center mb-6">Login/Signup Admin Editor</h2>
           <AuthEditor />
         </section>
 

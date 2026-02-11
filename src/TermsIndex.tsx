@@ -11,6 +11,7 @@ export default function TermsIndex() {
     { label: 'Instance 2', path: 'throne-terms-of-use' },
     { label: 'Vidavegas', path: 'vidavegas-terms-of-use' },
     { label: 'Bluffbet', path: 'bluffbet-terms-of-use' },
+    { label: 'Jackburst', path: 'jackburst-terms-of-use' },
   ];
 
   return (
