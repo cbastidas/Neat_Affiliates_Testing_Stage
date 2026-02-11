@@ -52,7 +52,7 @@ export default function BrandLogoGallery({ onSignup }: BrandLogoGalleryProps) {
     {/* TITLE */}
     <h2
       className="
-        text-3xl md:text-4xl font-bold text-center 
+        text-4xl md:text-4xl font-bold text-center 
         text-brand-purple
         mb-10 md:mb-12
       "

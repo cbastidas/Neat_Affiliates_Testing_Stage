@@ -45,17 +45,17 @@ export default function NewsImage() {
         hover:scale-110 hover:z-20 hover:shadow-2xl
       "
     >
-      <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">
+      <h2 className="text-4xl font-bold text-center text-brand-purple mb-4">
         Latest News
       </h2>
 
-      <p className="text-center text-gray-600 mb-10">
+      <p className="font-bold text-center text-black mb-10">
         Stay up to date with our latest updates and announcements.
       </p>
 
       {/* Loader */}
       {loading && (
-        <p className="text-center text-gray-500">Loading news...</p>
+        <p className="font-semibold text-center text-black">Loading news...</p>
       )}
 
       {/* No news message */}

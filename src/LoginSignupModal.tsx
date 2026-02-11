@@ -99,29 +99,29 @@ export default function LoginSignupModal({
 
   return createPortal(
     <div
-      className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-[9999]"
+      className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-[9999]"
       onClick={(e) => {
         // Close only if clicking the overlay, not the modal content
         if (e.target === e.currentTarget) onClose();
       }}
     >
       <div
-        className="bg-white rounded-2xl shadow-lg p-6 w-[90%] max-w-lg max-h-[80vh] overflow-y-auto relative animate-fadeIn"
+        className="bg-brand-purple rounded-2xl shadow-lg p-6 w-[90%] max-w-lg max-h-[80vh] overflow-y-auto relative animate-fadeIn"
         role="dialog" 
       >
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-2 right-4 text-gray-500 hover:text-black"
+          className="absolute font-bold hover:scale-150 transition text-4xl top-2 right-4 text-white hover:font-extrabold"
         >
           ✕
         </button>
 
-        <h3 className="text-xl font-bold mb-4 text-center capitalize">
-          {type} Links
+        <h3 className="text-4xl font-bold text-white cursor-default select-none mb-4 text-center capitalize">
+          {type} Forms
         </h3>
 
-        <div className="space-y-3 max-h-[70vh] overflow-y-auto">
+        <div className="space-y-3 max-h-[70vh] overflow-y-auto text-white">
           {Object.entries(groupedLinks).map(([instance, links]) => {
             
             const associatedBrands = brands
@@ -135,7 +135,7 @@ export default function LoginSignupModal({
               <div
 
                 key={instance}
-                className="block"
+                className="block hover:bg-brand-orange border rounded-2xl hover:border-brand-orange"
                 onClick={(e) => {
                   
                   if (instance === 'Realm' && type === 'signup') {
@@ -191,7 +191,7 @@ export default function LoginSignupModal({
                 }}
               >
                 <div className="border p-4 rounded-xl transition duration-300 cursor-pointer text-center
-                hover:border-brand-orange-400
+                hover:border-brand-orange
                  hover:font-bold
                  transition
                  duration-300">
@@ -200,9 +200,6 @@ export default function LoginSignupModal({
                     {associatedBrands || 'No brands associated'}
                   </p>
 
-                  <p className="text-sm text-gray-600 font-bold">
-                    {type === 'login' ? 'Login' : 'Signup'} Link
-                  </p>
                 </div>
               </div>
             );

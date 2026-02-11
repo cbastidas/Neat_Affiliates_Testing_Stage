@@ -87,12 +87,12 @@ export default function ContactTelegramModal({ isOpen, onClose, onBrandClick }: 
         <button
           onClick={onClose}
           aria-label="Close"
-          className="text-white font-bold absolute top-3 right-3 hover:scale-110 transition hover:text-white hover:font-extrabold"
+          className="text-white text-2xl font-bold absolute top-3 right-3 hover:scale-150 transition hover:text-white hover:font-extrabold"
         >
           ✕
         </button>
 
-        <h3 id="contact-support-title" className="text-xl font-bold mb-1 text-center">
+        <h3 id="contact-support-title" className="text-3xl font-bold mb-1 text-center">
           Contact Support
         </h3>
 

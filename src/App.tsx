@@ -356,11 +356,11 @@ const showLess = (groupName: string) => {
             "
           >
             <div className="max-w-[1200px] mx-auto px-4">
-              <h2 className="text-3xl font-bold text-center mb-4 text-gray-900">
+              <h2 className="text-4xl font-bold text-center mb-4 text-brand-purple">
                 Commission Rate
               </h2>
 
-              <p className="text-center text-gray-500 mb-8 text-base transition">
+              <p className="text-center text-black font-bold mb-8 text-base transition">
                 Earn more as you grow. Our laddered commission system rewards your success.
               </p>
 
@@ -518,8 +518,8 @@ const showLess = (groupName: string) => {
                       rounded-2xl
         ">
 
-          <h2 className="text-3xl font-bold mb-6">Join Neat Affiliates Today!</h2>
-          <h3 className="text-lg text-gray-600 mb-6">
+          <h2 className="text-4xl font-bold text-brand-purple mb-6">Join Neat Affiliates Today!</h2>
+          <h3 className="text-lg text-black mb-6">
             Sign up now to start earning commissions with ease.
           </h3>
           
