@@ -279,7 +279,7 @@ const showLess = (groupName: string) => {
 
       {/* Mobile Menu Dropdown */}
 {menuOpen && (
-  <div className="font-bold md:hidden fixed top-16 left-0 w-full bg-white shadow-lg z-50 px-4 py-4">
+  <div className="font-bold md:hidden fixed top-16 left-0 w-full bg-brand-orange shadow-lg z-50 px-4 py-4">
     {[
       { id: 'WhyJoin', label: 'Why Join' },
       { id: 'News', label: 'News' },
@@ -291,7 +291,7 @@ const showLess = (groupName: string) => {
       <button
         key={id}
         onClick={() => scrollToSection(id)}
-        className="block w-full text-left text-white py-2 px-2 rounded hover:bg-gray-100"
+        className="block w-full text-left text-white py-2 px-2 rounded hover:bg-brand-purple hover:text-white"
       >
         {label}
       </button>
@@ -300,7 +300,7 @@ const showLess = (groupName: string) => {
     {/* Login/Signup in mobile */}
     <button
       onClick={() => { setModalType('signup'); setMenuOpen(false); }}
-      className="block w-full text-left text-brand-purple py-2 px-2 font-medium hover:bg-brand-orange hover:text-white rounded hover:font-bold"
+      className="block w-full text-left font-extrabold text-brand-purple py-2 px-2 hover:bg-brand-purple hover:text-white rounded"
     >
       Signup
     </button>

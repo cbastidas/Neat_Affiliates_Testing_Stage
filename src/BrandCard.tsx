@@ -140,7 +140,7 @@ export default function BrandCard({
           <img
             src={previewUrl}
             alt={name}
-            className="h-8 md:h-10 object-contain hover:brightness-90 transition"
+            className="h-10 md:h-12 w-auto object-contain"
             style={{ maxHeight: 48, maxWidth: 110 }}
           />
 

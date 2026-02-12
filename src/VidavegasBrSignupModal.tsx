@@ -172,7 +172,7 @@ const VidavegasBrSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
 
   return (
     <div
-      className="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50"
+      className="fixed top-2 left-0 right-0 bottom-0 bg-black bg-opacity-60 flex justify-center items-center z-50"
       onClick={(e) => e.target === e.currentTarget && onClose()}
     >
       {/* MODAL */}
@@ -216,7 +216,7 @@ const VidavegasBrSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
             <img
               src={logo}
               alt="Vidavegas BR"
-              className="h-10 md:h-12 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform"
+              className="h-6 md:h-8 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform"
             />
           )}
         </div>

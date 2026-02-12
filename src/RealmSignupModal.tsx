@@ -298,7 +298,7 @@ const RealmSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
 
   return (
     <div
-      className="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50"
+      className="fixed top-2 left-0 right-0 bottom-0 bg-black bg-opacity-60 flex justify-center items-center z-50"
       onClick={(e) => {
         if (e.target === e.currentTarget) onClose();
       }}
@@ -339,12 +339,14 @@ const RealmSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
         {/* Realm logos from Supabase */}
         <div className="w-full flex flex-wrap justify-center gap-4 md:gap-6 mt-4 mb-8">
           {realmBrands.map((brand) => (
+            <div className="h-10 flex items-center justify-center">
             <img
               key={brand.id}
               src={brand.logo_url}
               alt={brand.name}
-              className="h-10 md:h-12 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform"
+              className="max-h-full max-w-full object-contain hover:scale-110 transition-transform"
             />
+            </div>
           ))}
         </div>
 
