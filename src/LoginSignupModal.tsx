@@ -117,11 +117,11 @@ export default function LoginSignupModal({
           ✕
         </button>
 
-        <h3 className="text-4xl font-bold text-white cursor-default select-none mb-4 text-center capitalize">
+        <h3 className="text-4xl font-bold text-brand-orange cursor-default select-none mb-4 text-center capitalize">
           {type} Forms
         </h3>
 
-        <div className="space-y-3 max-h-[70vh] overflow-y-auto text-brand-orange bg-white">
+        <div className="space-y-3 max-h-[70vh] overflow-y-auto bg-brand-purple">
           {Object.entries(groupedLinks).map(([instance, links]) => {
             
             const associatedBrands = brands
@@ -135,7 +135,7 @@ export default function LoginSignupModal({
               <div
 
                 key={instance}
-                className="block hover:bg-brand-orange border rounded-2xl hover:border-brand-orange"
+                className="block bg-white hover:bg-brand-orange hover:text-white border rounded-2xl hover:border-brand-orange"
                 onClick={(e) => {
                   
                   if (instance === 'Realm' && type === 'signup') {
