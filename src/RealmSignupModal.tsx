@@ -38,16 +38,16 @@ function TermsOfUseModal({
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   // Close on ESC
-  useEffect(() => {
-    if (!isOpen) return;
-
-    const handler = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
-    };
-
-    document.addEventListener("keydown", handler);
-    return () => document.removeEventListener("keydown", handler);
-  }, [isOpen, onClose]);
+//  useEffect(() => {
+//    if (!isOpen) return;
+//
+//    const handler = (e: KeyboardEvent) => {
+//      if (e.key === "Escape") onClose();
+//    };
+//
+//    document.addEventListener("keydown", handler);
+//    return () => document.removeEventListener("keydown", handler);
+//  }, [isOpen, onClose]);
 
   // Load terms by slug
   useEffect(() => {
@@ -81,9 +81,9 @@ function TermsOfUseModal({
   return (
     <div
       className="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50"
-      onClick={(e) => {
-        if (e.target === e.currentTarget) onClose();
-      }}
+      //onClick={(e) => {
+      //  if (e.target === e.currentTarget) onClose();
+      //}}
     >
       <div
         className="
@@ -149,25 +149,25 @@ function TermsChoiceModal({
   onChooseCasinomaxi: () => void;
 }) {
   // Close on ESC
-  useEffect(() => {
-    if (!isOpen) return;
-
-    const handler = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
-    };
-
-    document.addEventListener("keydown", handler);
-    return () => document.removeEventListener("keydown", handler);
-  }, [isOpen, onClose]);
+//  useEffect(() => {
+//    if (!isOpen) return;
+//
+//    const handler = (e: KeyboardEvent) => {
+//      if (e.key === "Escape") onClose();
+//    };
+//
+//    document.addEventListener("keydown", handler);
+//    return () => document.removeEventListener("keydown", handler);
+//  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 
   return (
     <div
       className="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50"
-      onClick={(e) => {
-        if (e.target === e.currentTarget) onClose();
-      }}
+      //onClick={(e) => {
+      //  if (e.target === e.currentTarget) onClose();
+      //}}
     >
       <div
         className="
@@ -260,16 +260,16 @@ const RealmSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
   }, [isOpen]);
 
   // Close modal on ESC key (main modal)
-  useEffect(() => {
-    if (!isOpen) return;
-
-    const handler = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
-    };
-
-    document.addEventListener("keydown", handler);
-    return () => document.removeEventListener("keydown", handler);
-  }, [isOpen, onClose]);
+//  useEffect(() => {
+//    if (!isOpen) return;
+//
+//    const handler = (e: KeyboardEvent) => {
+//      if (e.key === "Escape") onClose();
+//    };
+//
+//    document.addEventListener("keydown", handler);
+//    return () => document.removeEventListener("keydown", handler);
+//  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 
@@ -299,9 +299,9 @@ const RealmSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
   return (
     <div
       className="fixed top-2 left-0 right-0 bottom-0 bg-black bg-opacity-60 flex justify-center items-center z-50"
-      onClick={(e) => {
-        if (e.target === e.currentTarget) onClose();
-      }}
+     // onClick={(e) => {
+     //   if (e.target === e.currentTarget) onClose();
+     // }}
     >
       {/* Modal Container */}
       <div

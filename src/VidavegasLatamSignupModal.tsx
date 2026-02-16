@@ -34,16 +34,17 @@ function TermsOfUseModal({
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   // Close on ESC
-  useEffect(() => {
-    if (!isOpen) return;
-
-    const handler = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
-    };
-
-    document.addEventListener("keydown", handler);
-    return () => document.removeEventListener("keydown", handler);
-  }, [isOpen, onClose]);
+//  useEffect(() => {
+//    if (!isOpen) return;
+//
+//    const handler = (e: KeyboardEvent) => {
+//      if (e.key === "Escape") onClose();
+//    };
+//
+//    document.addEventListener("keydown", handler);
+//    return () => document.removeEventListener("keydown", handler);
+//  }, [isOpen, onClose]);
+    if (!isOpen) return null;
 
   // Load terms by slug
   useEffect(() => {
@@ -72,15 +73,14 @@ function TermsOfUseModal({
     fetchTerms();
   }, [isOpen, slug]);
 
-  if (!isOpen) return null;
 
   return (
     <div
       className="fixed top-2 left-0 right-0 bottom-0 bg-black bg-opacity-60 flex justify-center items-center z-50"
-      onClick={(e) => {
-        // Close only when clicking overlay
-        if (e.target === e.currentTarget) onClose();
-      }}
+      //onClick={(e) => {
+      //  // Close only when clicking overlay
+      //  if (e.target === e.currentTarget) onClose();
+      //}}
     >
       <div
         className="
@@ -172,15 +172,15 @@ const VidavegasLatamSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
   }, [isOpen]);
 
   // ESC close (main modal)
-  useEffect(() => {
-    if (!isOpen) return;
-
-    const handler = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
-    };
-    document.addEventListener("keydown", handler);
-    return () => document.removeEventListener("keydown", handler);
-  }, [isOpen, onClose]);
+//  useEffect(() => {
+//    if (!isOpen) return;
+//
+//    const handler = (e: KeyboardEvent) => {
+//      if (e.key === "Escape") onClose();
+//    };
+//    document.addEventListener("keydown", handler);
+//    return () => document.removeEventListener("keydown", handler);
+//  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 
@@ -194,7 +194,7 @@ const VidavegasLatamSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
   return (
     <div
       className="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50"
-      onClick={(e) => e.target === e.currentTarget && onClose()}
+      //onClick={(e) => e.target === e.currentTarget && onClose()}
     >
       {/* MODAL */}
       <div
