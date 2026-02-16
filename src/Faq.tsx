@@ -67,12 +67,12 @@ export default function Faq({ onSignup }: FaqProps) {
                                         rounded-2xl">
             <button 
               onClick={() => setExpanded(expanded === faq.id ? null : faq.id)} 
-              className="w-full text-left px-4 py-3 font-semibold"
+              className="w-full text-left px-4 py-3 font-bold"
             >
               {faq.question}
             </button>
             {expanded === faq.id && (
-              <div className="px-4 pb-4 text-gray-700">
+              <div className="px-4 pb-4 text-gray-600 font-semibold">
                 {faq.answer}
               </div>
             )}
