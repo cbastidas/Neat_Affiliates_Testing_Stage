@@ -159,8 +159,8 @@ export default function Testimonials() {
       transition duration-300
       rounded-2xl"
     >
-      <h2 className="text-4xl font-bold mb-4 text-brand-purple-700">Testimonials</h2>
-      <p className="text-base text-gray-600 mb-6 transition">
+      <h2 className="text-4xl font-extrabold mb-4 text-brand-purple">Testimonials</h2>
+      <p className="text-2xl text-black mb-6 transition">
         Here is what our partners say about us.
       </p>
 
@@ -178,9 +178,9 @@ export default function Testimonials() {
             startAutoSlide();
           }}
           className="hidden sm:flex absolute left-0 top-1/2 -translate-y-1/2 
-                     bg-white p-2 rounded-full shadow border-brand-orange hover:bg-gray-100 z-10"
+                     bg-white p-2 rounded-full shadow border border-brand-purple hover:bg-gray-100 z-10"
         >
-          <ChevronLeft className="w-6 h-6 text-brand-orange-600" />
+          <ChevronLeft className="w-6 h-6 text-brand-purple" />
         </button>
 
         {/* TRACK: scroll/touch + auto-slide */}
@@ -216,13 +216,13 @@ export default function Testimonials() {
                 px-4 py-4 sm:px-6 sm:py-6 
                 rounded-2xl shadow-md 
                 border border-gray-200
-                hover:scale-105 hover:z-20 hover:shadow-2xl
+                hover:border-brand-purple
                 transition duration-300
                 h-full flex flex-col
               ">
 
                 {/* TITLE */}
-                <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-1 transition">
+                <h3 className="text-lg sm:text-xl font-bold text-black mb-1 transition">
                   {t.title}
                 </h3>
 
@@ -233,7 +233,7 @@ export default function Testimonials() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="
-                      text-brand-orange text-sm mb-3 block 
+                      text-brand-purple text-sm mb-3 block 
                        transition
                     "
                   >
@@ -244,7 +244,7 @@ export default function Testimonials() {
                 {/* CONTENT */}
                 <p className="
                   text-gray-700 leading-relaxed italic
-                  border-l-4 border-brand-orange-300 pl-3
+                  border-l-4 border-brand-purple pl-3
                   group-hover:font-bold
                   transition
                 ">
@@ -269,9 +269,9 @@ export default function Testimonials() {
             startAutoSlide();
           }}
           className="hidden sm:flex absolute right-0 top-1/2 -translate-y-1/2 
-                     bg-white p-2 rounded-full shadow border hover:bg-gray-100 z-10"
+                     bg-white p-2 rounded-full shadow border border-brand-purple hover:bg-gray-100 z-10"
         >
-          <ChevronRight className="w-6 h-6 text-brand-orange-600" />
+          <ChevronRight className="w-6 h-6 font-bold text-brand-purple hover:font-extrabold" />
         </button>
 
         {/* Dots */}
@@ -281,7 +281,7 @@ export default function Testimonials() {
               key={i}
               onClick={() => goTo(i)}
               className={`h-2.5 rounded-full transition 
-                ${i === active ? "bg-brand-orange-700 w-6" : "bg-gray-300 w-2.5"}`}
+                ${i === active ? "bg-brand-purple w-6" : "bg-gray-300 w-2.5"}`}
             />
           ))}
         </div>

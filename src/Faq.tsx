@@ -42,14 +42,14 @@ export default function Faq({ onSignup }: FaqProps) {
                                   cursor-default select-none
                                   transition duration-300
                                   rounded-2xl">
-      <h2 className="text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+      <h2 className="text-4xl font-extrabold mb-4 text-brand-purple">Frequently Asked Questions</h2>
       <p className="text-black mb-6 transition">You can find the answers to your questions. For different questions, please contact us.</p>
 
       <div className="flex justify-center flex-wrap gap-4 mb-6">
         {categories.map((cat) => (
           <button 
             key={cat} 
-            className={`px-4 py-2 rounded-xl ${activeCategory === cat ? 'bg-brand-purple font-bold text-white hover:bg-brand-purple-700' : 'bg-brand-orange text-white hover:scale-105 transition  hover:bg-brand-orange  '}`} 
+            className={`px-4 py-2 rounded-xl ${activeCategory === cat ? 'bg-brand-purple font-bold text-white hover:bg-brand-purple-700' : 'bg-white text-brand-purple border border-brand-purple hover:scale-105 transition  hover:bg-brand-orange hover:text-white hover:border-brand-orange '}`} 
             onClick={() => setActiveCategory(cat)}
           >
             {cat}
@@ -61,7 +61,7 @@ export default function Faq({ onSignup }: FaqProps) {
         {filtered.map((faq) => (
           <div key={faq.id} className="mb-4 border rounded-xl bg-white 
                                         border-2 border-gray
-                                        hover:border-brand-orange-400 
+                                        hover:border-brand-purple 
                                         hover:scale-105 hover:z-20 hover:shadow-2xl        
                                         transition duration-300
                                         rounded-2xl">

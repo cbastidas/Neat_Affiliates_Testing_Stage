@@ -177,7 +177,8 @@ export default function WhyJoin() {
               onClick={() => setModalType("signup")}
               className="
                 text-xl font-bold px-6 py-3 rounded-xl
-                border border-brand-orange text-black hover:bg-brand-orange
+                border border-brand-purple text-brand-purple hover:bg-brand-orange
+                hover:border-brand-orange
                 hover:text-white
                 hover: shadow-md
                 shadow-lg transition

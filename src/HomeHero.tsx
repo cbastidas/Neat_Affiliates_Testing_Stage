@@ -14,7 +14,7 @@ export default function HomeHero({ onSignup, onScrollNext }: Props) {
   return (
     <section
       id="HomeHero"
-      className="relative rounded-2xl isolate overflow-hidden bg-brand-purple pt-24 pb-10 sm:pt-32 sm:pb-16
+      className="relative rounded-2xl isolate overflow-hidden bg-white pt-24 pb-10 sm:pt-32 sm:pb-16
                  font-bold
                  hover:shadow-2xl
                  border-2 border-transparent
@@ -23,18 +23,18 @@ export default function HomeHero({ onSignup, onScrollNext }: Props) {
       style={{ paddingTop: "5rem" }} // offset for fixed navbar
     >
       <div className="mx-auto max-w-4xl px-4 text-center">
-        <h1 className="text-4xl cursor-default select-none sm:text-6xl font-extrabold leading-tight text-brand-orange">
+        <h1 className="text-4xl cursor-default select-none sm:text-6xl font-extrabold leading-tight text-brand-purple">
           Grow your affiliate revenue with Neat Affiliates
         </h1>
 
-        <p className="mt-3 cursor-default select-none sm:mt-4 text-base sm:text-lg text-white">
+        <p className="mt-3 cursor-default select-none sm:mt-4 text-base sm:text-lg text-black">
           Tools, reporting and flexible deals to help you scale—fast.
         </p>
 
         <div className="mt-6 sm:mt-8 flex justify-center">
           <button
             onClick={onSignup}
-            className="font-extrabold sm:text-lg lg:text-lg rounded-xl bg-brand-orange px-6 py-3 text-white hover:bg-white hover:text-brand-orange transition"
+            className="font-extrabold sm:text-lg lg:text-lg rounded-xl bg-brand-purple px-6 py-3 text-white hover:bg-brand-orange hover:text-white transition"
           >
             Register Now and Start Earning
           </button>
@@ -44,8 +44,8 @@ export default function HomeHero({ onSignup, onScrollNext }: Props) {
             onClick={onScrollNext}
             className="font-extrabold rounded-xl border px-5 py-2 sm:px-6 sm:py-3 
                        bg-white
-                       border border-brand-orange
-                       text-brand-orange hover:bg-brand-orange hover:text-white
+                       border border-brand-purple
+                       text-brand-purple hover:bg-brand-orange hover:text-white hover:border-brand-orange
                        transition-all duration-300
                        "
             aria-label="Scroll to next section"

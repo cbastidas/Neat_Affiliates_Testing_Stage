@@ -167,7 +167,7 @@ export default function ContactEmailModal({ isOpen, onClose, brand }: Props) {
 
           <button
             type="submit"
-            className="w-full px-4 py-3 rounded-lg bg-brand-orange text-white font-semibold hover:bg-brand-orange-700 transition"
+            className="w-full px-4 py-3 rounded-lg bg-white text-brand-purple font-extrabold hover:bg-brand-orange hover:text-white transition"
           >
             Send Email ✉️
           </button>

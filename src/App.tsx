@@ -135,7 +135,6 @@ export default function App() {
 
 
 
-    // Ejecutar junto con los demás fetch
     fetchBrands();
     fetchSignupLinks();
 
@@ -197,7 +196,7 @@ const showLess = (groupName: string) => {
     <div className="font-sans min-h-screen bg-gray-50 scroll-smooth">
       {/* Navbar */}
 
-<nav className="fixed top-0 left-0 w-full bg-brand-orange shadow z-20 px-6 pt-2 pb-2 flex justify-between items-center">
+<nav className="fixed top-0 left-0 w-full bg-white shadow z-20 px-6 pt-2 pb-2 flex justify-between items-center">
 
   {/* Logo - Takes to TOP */}
   <div 
@@ -215,7 +214,7 @@ const showLess = (groupName: string) => {
       {/* 🟢 Login Button (Mobile Only) */}
       <button
           onClick={() => setModalType('login')}
-          className="rounded-xl bg-brand-purple px-5 py-2 text-white font-bold hover:bg-white hover:text-brand-orange transition"
+          className="rounded-xl bg-brand-purple px-5 py-2 text-white font-bold hover:bg-brand-orange hover:text-white transition"
       >
           Login
       </button>
@@ -223,7 +222,7 @@ const showLess = (groupName: string) => {
       {/* 🟢 Hamburguer Menu (Increased Size) */}
       <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="text-brand-purple text-4xl hover:scale-110 hover:z-20 hover:shadow-2xl cursor-default select-none transition-all duration-300 rounded-2xl hover:font-extrabold hover:text-white" 
+          className="text-brand-purple text-4xl hover:scale-110 hover:z-20 hover:shadow-2xl cursor-default select-none transition-all duration-300 rounded-2xl hover:font-extrabold" 
       >
           {menuOpen ? '✕' : '☰'}
       </button>
@@ -250,8 +249,8 @@ const showLess = (groupName: string) => {
       }
     }}
     className="text-black font-extrabold text-base px-3 py-2 rounded-xl border border-transparent
-    hover:border-brand-orange
-    hover:text-brand-purple
+    hover:bg-brand-purple
+    hover:text-white
     transition-all duration-300"
     >
     {id.replace(/([A-Z])/g, ' $1').trim()}
@@ -260,14 +259,14 @@ const showLess = (groupName: string) => {
 
   <button
     onClick={() => setModalType('signup')}
-    className="bg-brand-purple font-extrabold text-white px-3 py-0 rounded hover:bg-white hover:text-brand-purple"
+    className="bg-brand-purple font-extrabold text-white px-3 py-0 rounded hover:bg-brand-orange hover:text-white"
   >
     Register
   </button>
 
   <button
     onClick={() => setModalType('login')}
-    className="text-black px-3 py-0 rounded font-extrabold border border-brand-purple hover:bg-brand-purple hover:text-white"
+    className="text-black px-3 py-0 rounded font-extrabold border border-brand-purple hover:bg-brand-orange hover:border-brand-orange hover:text-white"
   >
     Login
   </button>
@@ -279,7 +278,7 @@ const showLess = (groupName: string) => {
 
       {/* Mobile Menu Dropdown */}
 {menuOpen && (
-  <div className="font-bold md:hidden fixed top-16 left-0 w-full bg-brand-orange shadow-lg z-50 px-4 py-4">
+  <div className="font-bold md:hidden fixed top-16 left-0 w-full bg-white shadow-lg z-50 px-4 py-4 text-black">
     {[
       { id: 'WhyJoin', label: 'Why Join' },
       { id: 'News', label: 'News' },
@@ -291,7 +290,7 @@ const showLess = (groupName: string) => {
       <button
         key={id}
         onClick={() => scrollToSection(id)}
-        className="block w-full text-left text-white py-2 px-2 rounded hover:bg-brand-purple hover:text-white"
+        className="block w-full text-left text-black py-2 px-2 rounded hover:bg-brand-purple hover:text-white"
       >
         {label}
       </button>
@@ -448,8 +447,10 @@ const showLess = (groupName: string) => {
                                   onClick={() => showMore(groupName, brands.length - 3)}
                                   className="
                                     px-6 py-2 rounded-xl 
-                                    bg-brand-orange text-white font-semibold
-                                    hover:bg-brand-purple hover:font-bold
+                                    bg-brand-white text-brand-purple font-semibold
+                                    border border-brand-purple
+                                    hover:bg-brand-orange hover:text-white hover:font-extrabold
+                                    hover:border-brand-orange
                                     transition duration-300
                                   "
                                 >
@@ -465,7 +466,8 @@ const showLess = (groupName: string) => {
                                     px-6 py-2 rounded-xl
                                     bg-gray text-black font-bold 
                                     border-brand-orange
-                                    hover:bg-brand-orange  
+                                    hover:bg-brand-purple
+                                    hover:border-brand-purple  
                                     hover:font-bold
                                     hover:text-white
                                     border
