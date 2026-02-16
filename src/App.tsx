@@ -215,7 +215,7 @@ const showLess = (groupName: string) => {
       {/* 🟢 Login Button (Mobile Only) */}
       <button
           onClick={() => setModalType('login')}
-          className="rounded-xl bg-brand-purple px-5 py-2 text-white font-bold hover:bg-brand-orange transition"
+          className="rounded-xl bg-brand-purple px-5 py-2 text-white font-bold hover:bg-white hover:text-brand-orange transition"
       >
           Login
       </button>
@@ -223,7 +223,7 @@ const showLess = (groupName: string) => {
       {/* 🟢 Hamburguer Menu (Increased Size) */}
       <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="text-brand-purple text-2xl hover:scale-110 hover:z-20 hover:shadow-2xl cursor-default select-none transition-all duration-300 rounded-2xl hover:font-extrabold" 
+          className="text-brand-purple text-4xl hover:scale-110 hover:z-20 hover:shadow-2xl cursor-default select-none transition-all duration-300 rounded-2xl hover:font-extrabold hover:text-white" 
       >
           {menuOpen ? '✕' : '☰'}
       </button>

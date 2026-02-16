@@ -130,13 +130,13 @@ export default function WhyJoin() {
 ------------------------------------------------------------ */}
 <div className="hidden md:flex flex-wrap justify-center gap-8 w-full">
   {items.map((item, index) => (
-    /* CONTENEDOR A: Maneja la entrada (SlideIn) y el ancho */
+    /*  Container */
     <div
       key={item.id}
       className="w-[300px] flex opacity-0"
       style={{
         animation: "slideIn 1.2s ease-out forwards",
-        animationDelay: `${index * 0.2}s`,
+        animationDelay: `${index * 0.1}s`,
       }}
     >
       <div className="
