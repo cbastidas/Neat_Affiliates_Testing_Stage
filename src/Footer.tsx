@@ -14,16 +14,16 @@ export default function Footer({  }: FooterProps) {
   return (
     <footer className="text-center py-8 text-gray-600 text-sm">
       
-      {/* Admin link to Terms and Conditions page 
+      
       <button
         onClick={() => navigate(isAdmin ? '/terms?admin=true' : '/terms')}
         className="text-purple-600 underline"
       >
-        Terms and Conditions
+        
       </button>
-      */}
+      
 
-      <p className="text-sm text-gray-500">
+      <p className="text-sm text-gray-500 cursor-default select-none">
         &copy; {new Date().getFullYear()} Neat Affiliates. All rights reserved.
       </p>
     </footer>
