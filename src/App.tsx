@@ -230,7 +230,7 @@ const showLess = (groupName: string) => {
   </div>
 
 {/* Desktop nav */}
-<div className="font-bold hidden md:flex flex-wrap gap-1 justify-end w-full max-w-full text-white">
+<div className="font-bold hidden md:flex flex-wrap gap-1 justify-end w-full max-w-full text-black">
 
   {[
     'WhyJoin',
@@ -249,7 +249,7 @@ const showLess = (groupName: string) => {
         scrollToSection(id);
       }
     }}
-    className="text-white font-extrabold text-base px-3 py-2 rounded-xl border border-transparent
+    className="text-black font-extrabold text-base px-3 py-2 rounded-xl border border-transparent
     hover:border-brand-orange
     hover:text-brand-purple
     transition-all duration-300"

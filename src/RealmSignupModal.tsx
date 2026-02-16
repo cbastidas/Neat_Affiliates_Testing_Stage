@@ -337,7 +337,7 @@ const RealmSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
         </p>
 
         {/* Realm logos from Supabase */}
-        <div className="w-full flex flex-wrap justify-center gap-5 md:gap-8 mt-4 mb-8">
+        <div className="w-full flex flex-wrap justify-center gap-x-10 gap-y-3 md:gap-x-10 mt-4 mb-8">
           {realmBrands.map((brand) => (
             <div className="h-10 flex items-center justify-center">
             <img

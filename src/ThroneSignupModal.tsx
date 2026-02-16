@@ -215,7 +215,7 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
         </p>
 
         {/* LOGOS */}
-        <div className="w-full flex flex-wrap justify-center gap-7 md:gap-7 mt-4 mb-2">
+        <div className="w-full flex flex-wrap justify-center gap-x-6 md:gap-7 mt-4 mb-2">
           {throneBrands.map((brand) => (
             <div className="h-10 flex items-center justify-center">
             <img
