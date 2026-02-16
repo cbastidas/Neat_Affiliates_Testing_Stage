@@ -267,7 +267,7 @@ const showLess = (groupName: string) => {
 
   <button
     onClick={() => setModalType('login')}
-    className="text-white px-3 py-0 rounded font-extrabold border border-brand-purple hover:bg-brand-purple hover:text-white"
+    className="text-black px-3 py-0 rounded font-extrabold border border-brand-purple hover:bg-brand-purple hover:text-white"
   >
     Login
   </button>
