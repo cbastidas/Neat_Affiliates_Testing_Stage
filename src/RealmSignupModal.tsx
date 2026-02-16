@@ -249,7 +249,7 @@ const RealmSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
     const fetchRealmBrands = async () => {
       const { data, error } = await supabase
         .from("brands")
-        .select("id, name, logo_url, group, order")
+        .select("id, name, logo_url, group, order, logo_scale")
         .eq("group", "Realm")
         .order("order", { ascending: true });
 
@@ -337,16 +337,20 @@ const RealmSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
         </p>
 
         {/* Realm logos from Supabase */}
-        <div className="w-full flex flex-wrap justify-center gap-4 md:gap-6 mt-4 mb-8">
+        <div className="w-full flex flex-wrap justify-center gap-5 md:gap-8 mt-4 mb-8">
           {realmBrands.map((brand) => (
             <div className="h-10 flex items-center justify-center">
             <img
               key={brand.id}
               src={brand.logo_url}
+              style={{
+                transform: `scale(${brand.logo_scale ?? 1})`,
+              }}
               alt={brand.name}
-              className="max-h-full max-w-full object-contain hover:scale-110 transition-transform"
+              className="max-h-full max-w-full object-contain"
             />
             </div>
+            
           ))}
         </div>
 

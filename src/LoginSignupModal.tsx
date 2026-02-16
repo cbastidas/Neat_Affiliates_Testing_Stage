@@ -121,7 +121,7 @@ export default function LoginSignupModal({
           {type} Forms
         </h3>
 
-        <div className="space-y-3 max-h-[70vh] overflow-y-auto text-white">
+        <div className="space-y-3 max-h-[70vh] overflow-y-auto text-brand-orange bg-white">
           {Object.entries(groupedLinks).map(([instance, links]) => {
             
             const associatedBrands = brands

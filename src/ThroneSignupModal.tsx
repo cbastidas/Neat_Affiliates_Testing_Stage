@@ -145,7 +145,7 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
     const fetchThroneBrands = async () => {
       const { data, error } = await supabase
         .from("brands")
-        .select("id, name, logo_url, group, order")
+        .select("id, name, logo_url, group, order, logo_scale")
         .eq("group", "Throne")
         .order("order", { ascending: true });
 
@@ -215,14 +215,17 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
         </p>
 
         {/* LOGOS */}
-        <div className="w-full flex flex-wrap justify-center gap-4 md:gap-6 mt-4 mb-2">
+        <div className="w-full flex flex-wrap justify-center gap-7 md:gap-7 mt-4 mb-2">
           {throneBrands.map((brand) => (
             <div className="h-10 flex items-center justify-center">
             <img
               key={brand.id}
               src={brand.logo_url}
+              style={{
+                transform: `scale(${brand.logo_scale ?? 1})`,
+              }}
               alt={brand.name}
-              className="max-h-full max-w-full object-contain hover:scale-110 transition-transform"
+              className="max-h-full max-w-full object-contain"
             />
             </div>
           ))}
