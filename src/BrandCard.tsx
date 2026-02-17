@@ -140,8 +140,8 @@ export default function BrandCard({
           <img
             src={previewUrl}
             alt={name}
-            className="h-10 md:h-12 w-auto object-contain"
-            style={{ maxHeight: 48, maxWidth: 110 }}
+            className="h-20 md:h-12 w-auto object-contain"
+            style={{ maxHeight: 48, maxWidth: 150 }}
           />
 
 

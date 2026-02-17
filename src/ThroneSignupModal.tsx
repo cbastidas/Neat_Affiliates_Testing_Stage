@@ -215,21 +215,25 @@ const ThroneSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
         </p>
 
         {/* LOGOS */}
-        <div className="w-full flex flex-wrap justify-center gap-x-6 md:gap-7 mt-4 mb-2">
-          {throneBrands.map((brand) => (
-            <div className="h-10 flex items-center justify-center">
-            <img
-              key={brand.id}
-              src={brand.logo_url}
-              style={{
-                transform: `scale(${brand.logo_scale ?? 1})`,
-              }}
-              alt={brand.name}
-              className="max-h-full max-w-full object-contain"
-            />
-            </div>
-          ))}
-        </div>
+<div className="w-full bg-white rounded-xl p-4 mb-8">
+  <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-4 gap-2 items-center justify-items-center">
+    {throneBrands.map((brand) => (
+      <div 
+        key={brand.id} 
+        className="w-full h-12 flex items-center justify-center transition hover:scale-110"
+      >
+        <img
+          src={brand.logo_url}
+          style={{
+            transform: `scale(${brand.logo_scale ?? 1.2})`,
+          }}
+          alt={brand.name}
+          className="max-h-full max-w-full object-contain"
+        />
+      </div>
+    ))}
+  </div>
+</div>
 
         {/* FORM START */}
         <form className="grid grid-cols-1 md:grid-cols-2 gap-4">

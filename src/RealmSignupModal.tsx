@@ -344,7 +344,7 @@ const RealmSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
               key={brand.id}
               src={brand.logo_url}
               style={{
-                transform: `scale(${brand.logo_scale ?? 1})`,
+                transform: `scale(${brand.logo_scale ?? 1.4})`,
               }}
               alt={brand.name}
               className="max-h-full max-w-full object-contain"
