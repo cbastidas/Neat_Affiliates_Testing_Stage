@@ -14,7 +14,7 @@ export default function HomeHero({ onSignup, onScrollNext }: Props) {
   return (
     <section
       id="HomeHero"
-      className="relative rounded-2xl isolate overflow-hidden bg-white pt-24 pb-10 sm:pt-32 sm:pb-16
+      className="relative rounded-2xl isolate overflow-hidden bg-transparent shadow-2xl pt-24 pb-10 sm:pt-32 sm:pb-16
                  font-bold
                  hover:shadow-2xl
                  border-2 border-transparent
@@ -43,9 +43,9 @@ export default function HomeHero({ onSignup, onScrollNext }: Props) {
         <button
             onClick={onScrollNext}
             className="font-extrabold rounded-xl border px-5 py-2 sm:px-6 sm:py-3 
-                       bg-white
-                       border border-brand-purple
-                       text-brand-purple hover:bg-brand-orange hover:text-white hover:border-brand-orange
+                       bg-brand-orange
+                       border border-brand-orange
+                       text-white hover:bg-white hover:text-brand-orange hover:border-brand-orange
                        transition-all duration-300
                        "
             aria-label="Scroll to next section"

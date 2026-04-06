@@ -66,11 +66,18 @@ export default function WhyJoin() {
       {/* Inject animation into page */}
       <style>{cardAnimation}</style>
 
-      <section id="WhyJoin" className="relative py-12 bg-white rounded-2xl border-2
-      border-transparent
-      font-bold
-      transition
-      duration-300">
+      <section id="WhyJoin" className="relative py-12 rounded-2xl border-2
+  border-transparent
+  font-bold
+  transition
+  duration-300"
+  style={{
+    backgroundImage: "url('/NA-BG2.svg')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+  }}
+>
         <div className="max-w-6xl mx-auto px-4">
 
           {/* ------------------------------------------------------------
@@ -177,9 +184,9 @@ export default function WhyJoin() {
               onClick={() => setModalType("signup")}
               className="
                 text-xl font-bold px-6 py-3 rounded-xl
-                border border-brand-purple text-brand-purple hover:bg-brand-orange
+                border border-brand-orange bg-brand-orange text-white hover:bg-white
                 hover:border-brand-orange
-                hover:text-white
+                hover:text-brand-orange
                 hover: shadow-md
                 shadow-lg transition
                  hover:font-bold

@@ -77,7 +77,7 @@ export default function NewsImage() {
                 overflow-hidden 
                 border 
                 border-gray-200
-                bg-gray-50
+                bg-transparent
                 shadow-sm
                 transition-all 
                 duration-300 

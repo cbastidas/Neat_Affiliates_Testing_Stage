@@ -504,7 +504,7 @@ const RealmSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
 
             {/* BANK */}
             {paymentMethod === "bank" && (
-              <div className="mt-6 p-4 border rounded-lg bg-gray-50">
+              <div className="mt-6 p-4 border rounded-lg bg-transparent">
                 <h4 className="font-bold text-black mb-1">Bank Transfer payment details</h4>
                 <p className="text-sm font-semibold text-black mb-4">
                   Please insert all the necessary information
@@ -536,7 +536,7 @@ const RealmSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
 
             {/* CRYPTO */}
             {paymentMethod === "crypto" && (
-              <div className="mt-6 p-4 border rounded-lg bg-gray-50">
+              <div className="mt-6 p-4 border rounded-lg bg-transparent">
                 <h4 className="font-bold text-black mb-1">Crypto payment details</h4>
                 <p className="text-sm text-black font-semibold mb-4">
                   Please enter your wallet information
@@ -558,7 +558,7 @@ const RealmSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
 
             {/* PAPEL */}
             {paymentMethod === "papel" && (
-              <div className="mt-6 p-4 border rounded-lg bg-gray-50">
+              <div className="mt-6 p-4 border rounded-lg bg-transparent">
                 <h4 className="font-bold text-black mb-1">Papel Wallet payment details</h4>
                 <p className="text-sm text-black font-semibold mb-4">
                   Please enter valid Papel wallet details

@@ -30,7 +30,7 @@ export default function Contact() {
   }, []);
 
   return (
-    <section id="Contact" className="text-center py-16 bg-gray-50 rounded-2xl border">
+    <section id="Contact" className="text-center py-16 bg-transparent rounded-2xl border">
       <h2 className="text-3xl font-bold text-purple-700 mb-2">Contact Us</h2>
       <p className="text-gray-600 mb-8">
         Reach out to us via Email, Telegram or Microsoft Teams.

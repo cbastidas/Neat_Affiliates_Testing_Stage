@@ -313,7 +313,7 @@ export default function BrandCard({
               </button>
               <button
                 onClick={handleCancel}
-                className="px-4 py-1 rounded bg-gray-500 text-white hover:bg-gray-600"
+                className="px-4 py-1 rounded bg-transparent text-white hover:bg-gray-600"
               >
                 Cancel
               </button>

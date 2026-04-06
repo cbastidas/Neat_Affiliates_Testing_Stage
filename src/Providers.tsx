@@ -58,7 +58,7 @@ export default function Providers() {
   );
 
   return (
-    <div className="py-16 px-4 bg-gray-50 min-h-screen">
+    <div className="py-16 px-4 bg-transparent min-h-screen">
       {renderSection('💳 Payment Providers', paymentProviders)}
       {renderSection('🎮 Game Providers', gameProviders)}
     </div>

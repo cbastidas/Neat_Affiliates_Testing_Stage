@@ -193,7 +193,7 @@ const showLess = (groupName: string) => {
 
   return (
     
-    <div className="font-sans min-h-screen bg-gray-50 scroll-smooth">
+    <div className="font-sans min-h-screen bg-transparent scroll-smooth">
       {/* Navbar */}
 
 <nav className="fixed top-0 left-0 w-full bg-white shadow z-20 px-6 pt-2 pb-2 flex justify-between items-center">
@@ -266,7 +266,7 @@ const showLess = (groupName: string) => {
 
   <button
     onClick={() => setModalType('login')}
-    className="text-black px-3 py-0 rounded font-extrabold border border-brand-purple hover:bg-brand-orange hover:border-brand-orange hover:text-white"
+    className="text-black px-3 py-0 rounded font-extrabold border border-brand-orange bg-brand-orange hover:bg-white hover:border-brand-orange hover:text-brand-orange"
   >
     Login
   </button>
@@ -386,7 +386,15 @@ const showLess = (groupName: string) => {
                       </div>
 
                       {/* DESKTOP */}
-                      <div className="hidden md:flex flex-col items-center bg-white rounded-2xl border">
+                      <div
+                        className="hidden md:flex flex-col items-center rounded-2xl border"
+                        style={{
+                          backgroundImage: "url('/NA-BG2.svg')",
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center',
+                          backgroundRepeat: 'no-repeat',
+                        }}
+                      >
 
                         {/* Always 3 initial cards */}
                         <div className="
@@ -447,9 +455,9 @@ const showLess = (groupName: string) => {
                                   onClick={() => showMore(groupName, brands.length - 3)}
                                   className="
                                     px-6 py-2 rounded-xl 
-                                    bg-brand-white text-brand-purple font-semibold
-                                    border border-brand-purple
-                                    hover:bg-brand-orange hover:text-white hover:font-extrabold
+                                    bg-brand-orange text-white font-semibold
+                                    border border-brand-orange
+                                    hover:bg-white hover:text-brand-orange
                                     hover:border-brand-orange
                                     transition duration-300
                                   "
@@ -464,12 +472,12 @@ const showLess = (groupName: string) => {
                                   onClick={() => showLess(groupName)}
                                   className="
                                     px-6 py-2 rounded-xl
-                                    bg-gray text-black font-bold 
+                                    bg-brand-orange text-white font-bold 
                                     border-brand-orange
-                                    hover:bg-brand-purple
-                                    hover:border-brand-purple  
+                                    hover:bg-white
+                                    hover:border-brand-orange  
                                     hover:font-bold
-                                    hover:text-white
+                                    hover:text-brand-orange
                                     border
                                     transition-all duration-300
                                   "

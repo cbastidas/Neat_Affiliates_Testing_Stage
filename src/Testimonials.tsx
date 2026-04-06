@@ -178,9 +178,9 @@ export default function Testimonials() {
             startAutoSlide();
           }}
           className="hidden sm:flex absolute left-0 top-1/2 -translate-y-1/2 
-                     bg-white p-2 rounded-full shadow border border-brand-purple hover:bg-gray-100 z-10"
+                     bg-brand-orange p-2 rounded-full shadow border border-brand-orange hover:bg-brand-purple hover:border-brand-purple z-10"
         >
-          <ChevronLeft className="w-6 h-6 text-brand-purple" />
+          <ChevronLeft className="w-6 h-6 text-white" />
         </button>
 
         {/* TRACK: scroll/touch + auto-slide */}
@@ -216,7 +216,7 @@ export default function Testimonials() {
                 px-4 py-4 sm:px-6 sm:py-6 
                 rounded-2xl shadow-md 
                 border border-gray-200
-                hover:border-brand-purple
+                hover:border-brand-orange
                 transition duration-300
                 h-full flex flex-col
               ">
@@ -269,9 +269,9 @@ export default function Testimonials() {
             startAutoSlide();
           }}
           className="hidden sm:flex absolute right-0 top-1/2 -translate-y-1/2 
-                     bg-white p-2 rounded-full shadow border border-brand-purple hover:bg-gray-100 z-10"
+                     bg-brand-orange p-2 rounded-full shadow border border-brand-orange hover:bg-brand-purple hover:border-brand-purple z-10"
         >
-          <ChevronRight className="w-6 h-6 font-bold text-brand-purple hover:font-extrabold" />
+          <ChevronRight className="w-6 h-6 font-bold text-white hover:font-extrabold" />
         </button>
 
         {/* Dots */}
@@ -281,7 +281,7 @@ export default function Testimonials() {
               key={i}
               onClick={() => goTo(i)}
               className={`h-2.5 rounded-full transition 
-                ${i === active ? "bg-brand-purple w-6" : "bg-gray-300 w-2.5"}`}
+                ${i === active ? "bg-brand-orange w-6" : "bg-gray-300 w-2.5"}`}
             />
           ))}
         </div>
