@@ -387,9 +387,9 @@ const showLess = (groupName: string) => {
 
                       {/* DESKTOP */}
                       <div
-                        className="hidden md:flex flex-col items-center rounded-2xl border"
+                        className="hidden md:flex flex-col items-center rounded-2xl border bg-white"
                         style={{
-                          backgroundImage: "url('/NA-BG2.svg')",
+                          //backgroundImage: "url('/NA-BG2.svg')",
                           backgroundSize: 'cover',
                           backgroundPosition: 'center',
                           backgroundRepeat: 'no-repeat',
