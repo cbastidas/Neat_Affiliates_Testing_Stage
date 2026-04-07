@@ -14,7 +14,7 @@ export default function HomeHero({ onSignup, onScrollNext }: Props) {
   return (
     <section
       id="HomeHero"
-      className="relative rounded-2xl isolate overflow-hidden bg-transparent shadow-2xl pt-24 pb-10 sm:pt-32 sm:pb-16
+      className="relative rounded-2xl isolate overflow-hidden bg-white shadow-2xl pt-24 pb-10 sm:pt-32 sm:pb-16
                  font-bold
                  hover:shadow-2xl
                  border-2 border-transparent

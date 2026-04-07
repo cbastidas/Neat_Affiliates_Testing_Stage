@@ -42,8 +42,8 @@ export default function Faq({ onSignup }: FaqProps) {
                                   cursor-default select-none
                                   transition duration-300
                                   rounded-2xl">
-      <h2 className="text-4xl font-extrabold mb-4 text-brand-purple">Frequently Asked Questions</h2>
-      <p className="text-black mb-6 transition">You can find the answers to your questions. For different questions, please contact us.</p>
+      <h2 className="text-4xl font-bold text-center mb-4 text-brand-purple">Frequently Asked Questions</h2>
+      <p className="text-black font-bold text-center text-base mb-8 transition">You can find the answers to your questions. For different questions, please contact us.</p>
 
       <div className="flex justify-center flex-wrap gap-4 mb-6">
         {categories.map((cat) => (

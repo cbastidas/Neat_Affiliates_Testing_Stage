@@ -266,7 +266,7 @@ const showLess = (groupName: string) => {
 
   <button
     onClick={() => setModalType('login')}
-    className="text-black px-3 py-0 rounded font-extrabold border border-brand-orange bg-brand-orange hover:bg-white hover:border-brand-orange hover:text-brand-orange"
+    className="text-white px-3 py-0 rounded font-extrabold border border-brand-orange bg-brand-orange hover:bg-white hover:border-brand-orange hover:text-brand-orange"
   >
     Login
   </button>
@@ -472,12 +472,12 @@ const showLess = (groupName: string) => {
                                   onClick={() => showLess(groupName)}
                                   className="
                                     px-6 py-2 rounded-xl
-                                    bg-brand-orange text-white font-bold 
+                                    bg-white text-brand-orange font-bold 
                                     border-brand-orange
-                                    hover:bg-white
-                                    hover:border-brand-orange  
+                                    hover:bg-brand-orange
+                                    hover:border-brand-orange
                                     hover:font-bold
-                                    hover:text-brand-orange
+                                    hover:text-white
                                     border
                                     transition-all duration-300
                                   "
@@ -528,8 +528,8 @@ const showLess = (groupName: string) => {
                       rounded-2xl
         ">
 
-          <h2 className="text-4xl font-bold text-brand-purple mb-6">Join Neat Affiliates Today!</h2>
-          <h3 className="text-lg text-black mb-6">
+          <h2 className="text-4xl font-bold text-brand-purple text-center text-black mb-4">Join Neat Affiliates Today!</h2>
+          <h3 className="text-base text-black font-bold text-center mb-8 transition">
             Sign up now to start earning commissions with ease.
           </h3>
           

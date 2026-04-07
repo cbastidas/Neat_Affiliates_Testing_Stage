@@ -69,10 +69,11 @@ export default function WhyJoin() {
       <section id="WhyJoin" className="relative py-12 rounded-2xl border-2
   border-transparent
   font-bold
+  bg-white
   transition
   duration-300"
   style={{
-    backgroundImage: "url('/NA-BG2.svg')",
+    //backgroundImage: "url('/NA-BG2.svg')",
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
@@ -184,9 +185,9 @@ export default function WhyJoin() {
               onClick={() => setModalType("signup")}
               className="
                 text-xl font-bold px-6 py-3 rounded-xl
-                border border-brand-orange bg-brand-orange text-white hover:bg-white
+                border border-brand-purple bg-brand-purple text-white hover:bg-brand-orange
                 hover:border-brand-orange
-                hover:text-brand-orange
+                hover:text-white
                 hover: shadow-md
                 shadow-lg transition
                  hover:font-bold

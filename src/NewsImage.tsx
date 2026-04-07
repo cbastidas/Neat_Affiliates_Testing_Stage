@@ -49,7 +49,7 @@ export default function NewsImage() {
         Latest News
       </h2>
 
-      <p className="font-bold text-center text-black mb-10">
+      <p className="font-bold text-center text-black mb-8">
         Stay up to date with our latest updates and announcements.
       </p>
 
