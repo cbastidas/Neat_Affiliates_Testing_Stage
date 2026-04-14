@@ -1,6 +1,8 @@
 // RealmSignupModal.tsx
 import React, { useEffect, useState } from "react";
 import { supabase } from "./lib/supabaseClient";
+import emailIcon from "./assets/Email.svg";
+import telegramIcon from "./assets/Telegram.svg";
 
 interface Props {
   isOpen: boolean;
@@ -697,7 +699,9 @@ const RealmSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-brand-purple hover:underline text-lg font-medium"
               >
-                <span className="text-2xl">📨</span>
+                <span className="text-2xl">
+                  <img src={telegramIcon} alt="Telegram" className="w-6 h-6" />
+                </span>
                 Telegram: @neat_affiliates
               </a>
 
@@ -705,7 +709,9 @@ const RealmSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
                 href="mailto:support@neataffiliates.com"
                 className="flex items-center gap-2 text-brand-purple hover:underline text-lg font-medium"
               >
-                <span className="text-2xl">📧</span>
+                <span className="text-2xl">
+                  <img src={emailIcon} alt="Email" className="w-6 h-6" />
+                </span>
                 Email: support@neataffiliates.com
               </a>
             </div>

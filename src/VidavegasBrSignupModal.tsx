@@ -1,6 +1,9 @@
 // VidavegasBrSignupModal.tsx
 import React, { useEffect, useState } from "react";
 import { supabase } from "./lib/supabaseClient";
+import emailIcon from "./assets/Email.svg";
+
+
 
 interface Props {
   isOpen: boolean;
@@ -393,7 +396,9 @@ const VidavegasBrSignupModal: React.FC<Props> = ({ isOpen, onClose }) => {
                 href="mailto:vidavegas@neataffiliates.com"
                 className="flex w-fit items-center gap-2 text-brand-purple hover:underline transition text-lg font-medium"
               >
-                <span className="text-2xl">📧</span>
+                <span className="text-2xl">
+                  <img src={emailIcon} alt="Email" className="w-6 h-6" />
+                </span>
                 Email: vidavegas@neataffiliates.com
               </a>
             </div>
