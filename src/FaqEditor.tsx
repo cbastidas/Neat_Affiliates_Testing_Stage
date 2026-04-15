@@ -13,7 +13,7 @@ interface Faq {
 const categories = [
   'Commission',
   'General',
-  'Payment Issues',
+  'Payment',
   'Reporting and Statistics',
   'Support',
   'Technical Questions',
