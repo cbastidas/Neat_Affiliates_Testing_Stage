@@ -11,6 +11,7 @@ export default function Layout({ onOpenModal }: LayoutProps) {
     <div style={{
   fontFamily: 'sans-serif',
   minHeight: '100vh',
+  //backgroundColor: '#ffffff', //gray home
   backgroundImage: "url('/NA-BG2.svg')",
   backgroundSize: 'cover',
   backgroundPosition: 'center',

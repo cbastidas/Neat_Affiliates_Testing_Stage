@@ -206,7 +206,7 @@ const showLess = (groupName: string) => {
     }}
     className="flex items-center gap-2"
   >
-    <img src="/logo.png" alt="Logo" className="h-10 w-25 cursor-pointer hover:brightness-125" />
+    <img src="/logo1.svg" alt="Logo" className="h-10 w-25 cursor-pointer hover:brightness-125" />
   </div>
 
     {/* Hamburguer Menu */}
