@@ -37,7 +37,8 @@ export default function Faq({ onSignup }: FaqProps) {
 
   return (
     <section id="FAQ" className="py-16 text-center bg-white 
-                                  border-2 border-transparent
+                                  border border-purple-300 rounded-2xl
+                                  hover:border-brand-purple hover:border-2
                                   font-bold
                                   cursor-default select-none
                                   transition duration-300

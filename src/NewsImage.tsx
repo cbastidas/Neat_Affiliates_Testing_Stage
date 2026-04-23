@@ -34,7 +34,7 @@ export default function NewsImage() {
         py-20 
         bg-white 
         rounded-2xl 
-        border-2 border-transparent
+        border border-purple-400
         shadow-sm 
         px-6 
         max-w-5xl 
@@ -42,6 +42,7 @@ export default function NewsImage() {
         transition 
         duration-300
         cursor-default select-none
+        hover:border-brand-purple hover:border-2
         hover:scale-110 hover:z-20 hover:shadow-2xl
       "
     >

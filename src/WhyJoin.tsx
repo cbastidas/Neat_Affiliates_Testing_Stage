@@ -66,10 +66,12 @@ export default function WhyJoin() {
       {/* Inject animation into page */}
       <style>{cardAnimation}</style>
 
-      <section id="WhyJoin" className="relative py-12 rounded-2xl border-2
-  border-transparent
+      <section id="WhyJoin" className="relative py-12 rounded-2xl border
+  border-purple-400
   font-bold
   bg-white
+  hover:shadow-2xl
+  hover:border-brand-purple hover:border-2
   transition
   duration-300"
   style={{
@@ -100,6 +102,8 @@ export default function WhyJoin() {
                 key={item.id}
                 className="group
                       p-4 bg-white rounded-xl border border-gray-200 flex items-start gap-3 
+                      border border-orange-400
+                      hover:border-brand-orange hover:border-2
                       opacity-0 transition-all duration-300
                       hover:scale-105 hover:z-20 hover:shadow-2xl
                 "

@@ -128,8 +128,9 @@ export default function BrandCard({
 
   return (
     <div className="brand-card mx-auto relative
-    border-2 border-transparent
+    border border-orange-300 
     font-bold
+    hover:border-brand-orange hover:border-2
     hover:scale-105 hover:z-20 hover:shadow-2xl
     transition duration-300
     rounded-2xl">
@@ -237,7 +238,7 @@ export default function BrandCard({
 
       <div className="overflow-x-hidden text-[13px] md:text-sm mt-2">
         <table className="table-fixed w-full max-w-full text-left text-gray-700 border border-gray-200">
-          <thead className="bg-gray-100 text-gray-600 uppercase text-[11px] md:text-xs">
+          <thead className="bg-brand-orange text-white uppercase text-[11px] md:text-xs">
             <tr>
               <th className="px-3 md:px-4 py-2 border border-gray-200 w-1/2 truncate">{editedTiersLabel} TIERS</th>
               <th className="px-3 md:px-4 py-2 border border-gray-200 w-1/2 truncate">{editedCommissionType}</th>
@@ -246,7 +247,7 @@ export default function BrandCard({
           <tbody>
             {tiers.map((tier, index) => (
               <tr key={index}>
-                <td className="px-3 md:px-4 py-2 border border-gray-200 align-top whitespace-normal break-words leading-tight">
+                <td className="px-3 md:px-4 py-2 border border-brand-orange align-top whitespace-normal break-words leading-tight">
                   {isEditing && !isPublicView ? (
                     <input
                       value={tier.range}
@@ -258,7 +259,7 @@ export default function BrandCard({
                   )}
                 </td>
                 
-                <td className="px-3 md:px-4 py-2 border border-gray-200 text-center align-top">
+                <td className="px-3 md:px-4 py-2 border border-brand-orange text-center align-top">
                   {isEditing && !isPublicView ? (
                     <div className="flex justify-end items-center gap-1">
                       <input

@@ -346,11 +346,11 @@ const showLess = (groupName: string) => {
             className="
               bg-white 
               pt-6 md:pt-24 pb-6
-              border-2 rounded-2xl
+              border rounded-2xl
               cursor-default select-none
-              border-transparent
+              border-purple-400
               font-bold
-              
+              hover:border-brand-purple hover:border-2
               transition duration-300
             "
           >
@@ -363,19 +363,19 @@ const showLess = (groupName: string) => {
                 Earn more as you grow. Our laddered commission system rewards your success.
               </p>
 
-              <div className="space-y-10 mt-6">
+              <div className="space-y-10 mt-6 border border-transparent">
                 {groupedBrands.map(({ groupName, brands }) => (
                   brands.length > 0 && (
                     <section
                       key={groupName}
                       className="
-                        p-6 bg-transparent rounded-lg border shadow-sm
-                        border-transparent
+                        p-6 bg-purple-100 rounded-lg border shadow-sm
+                        
                       "
                     >
 
                       {/* MOBILE */}
-                      <div className="md:hidden -mx-20 px-4">
+                      <div className="md:hidden -mx-20 px-4 border border-purple-300 rounded-2xl">
                         <CommissionRateMobile 
                           brands={brands.map(brand => ({
                             ...brand,
@@ -400,7 +400,7 @@ const showLess = (groupName: string) => {
                         <div className="
                           grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 
                           gap-8 justify-items-center w-full p-6 rounded-2xl
-                          border-2 border-transparent
+                          border border-transparent
                           transition duration-300
                         ">
                           {brands.slice(0, 3).map((brand) => (
@@ -520,8 +520,9 @@ const showLess = (groupName: string) => {
 
       {/* Login and Signup Section */}
       <div className="py-16 text-center bg-white 
-                      border-2 border-transparent
+                      border border-orange-300 rounded-2xl
                       font-bold
+                      hover:border-brand-orange hover:border-2
                       hover:scale-105 hover:z-20 hover:shadow-2xl
                       cursor-default select-none
                       transition-all duration-300

@@ -153,9 +153,10 @@ export default function Testimonials() {
     <section
       id="Testimonials"
       className="py-2 px-3 sm:pt-16 text-center bg-white
-      border-2 border-transparent
+      border border-orange-300 rounded-2xl
       font-bold
       cursor-default select-none
+      hover:border-brand-orange hover:border-2
       transition duration-300
       rounded-2xl"
     >
@@ -215,8 +216,8 @@ export default function Testimonials() {
                 bg-white 
                 px-4 py-4 sm:px-6 sm:py-6 
                 rounded-2xl shadow-md 
-                border border-gray-200
-                hover:border-brand-orange
+                border border-orange-300
+                hover:border-brand-orange hover:border-2
                 transition duration-300
                 h-full flex flex-col
               ">

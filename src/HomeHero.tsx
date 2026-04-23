@@ -14,10 +14,11 @@ export default function HomeHero({ onSignup, onScrollNext }: Props) {
   return (
     <section
       id="HomeHero"
-      className="relative rounded-2xl isolate overflow-hidden bg-white shadow-2xl pt-24 pb-10 sm:pt-32 sm:pb-16
+      className="relative rounded-2xl isolate border overflow-hidden bg-white pt-24 pb-10 sm:pt-32 sm:pb-16 border-purple-400
                  font-bold
                  hover:shadow-2xl
-                 border-2 border-transparent
+                 hover:border-brand-purple hover:border-2
+                 border border-transparent
                  transition
                  duration-300"
       style={{ paddingTop: "5rem" }} // offset for fixed navbar
