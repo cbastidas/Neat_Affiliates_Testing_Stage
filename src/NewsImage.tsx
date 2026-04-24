@@ -37,7 +37,7 @@ export default function NewsImage() {
         border border-purple-400
         shadow-sm 
         px-6 
-        max-w-5xl 
+        max-w-6xl 
         mx-auto
         transition 
         duration-300

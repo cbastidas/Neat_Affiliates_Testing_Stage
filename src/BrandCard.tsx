@@ -128,9 +128,8 @@ export default function BrandCard({
 
   return (
     <div className="brand-card mx-auto relative
-    border border-orange-300 
+    border border-gray 
     font-bold
-    hover:border-brand-orange hover:border-2
     hover:scale-105 hover:z-20 hover:shadow-2xl
     transition duration-300
     rounded-2xl">
@@ -197,7 +196,7 @@ export default function BrandCard({
           <select
             value={editedGroup}
             onChange={(e) => setEditedGroup(e.target.value)}
-            className="text-center border rounded p-1 w-full mb-2 bg-yellow-100 shadow"
+            className="text-center border border-transparent rounded-2xl p-1 w-full mb-2 bg-yellow-100 shadow"
           >
             <option value="">-- Select Group --</option>
             <option value="Realm">Realm</option>
@@ -219,7 +218,7 @@ export default function BrandCard({
           <select
             value={editedTiersLabel}
             onChange={(e) => setEditedTiersLabel(e.target.value)}
-            className="border rounded p-1 font-semibold"
+            className="border border-transparent rounded p-1 font-semibold"
           >
             <option value="NDC">NDC Tiers</option>
             <option value="NGR">NGR Tiers</option>
@@ -227,7 +226,7 @@ export default function BrandCard({
           <select
             value={editedCommissionType}
             onChange={(e) => setEditedCommissionType(e.target.value)}
-            className="border rounded p-1 font-semibold"
+            className="border border-transparent rounded p-1 font-semibold"
           >
             <option value="Commission">Commission</option>
             <option value="CPA">CPA</option>

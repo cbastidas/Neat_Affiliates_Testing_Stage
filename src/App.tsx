@@ -248,7 +248,7 @@ const showLess = (groupName: string) => {
         scrollToSection(id);
       }
     }}
-    className="text-black font-extrabold text-base px-3 py-2 rounded-xl border border-transparent
+    className="text-black font-extrabold text-base px-3 py-2 rounded-2xl border border-transparent
     hover:bg-brand-purple
     hover:text-white
     transition-all duration-300"
@@ -369,13 +369,13 @@ const showLess = (groupName: string) => {
                     <section
                       key={groupName}
                       className="
-                        p-6 bg-white rounded-lg border border-purple-400 shadow-sm
+                        p-6 bg-white rounded-2xl border border-transparent
                         
                       "
                     >
 
                       {/* MOBILE */}
-                      <div className="md:hidden -mx-20 px-4 border border-purple-300 rounded-2xl">
+                      <div className="md:hidden -mx-20 px-4 border border-orange-400 rounded-2xl">
                         <CommissionRateMobile 
                           brands={brands.map(brand => ({
                             ...brand,
@@ -387,7 +387,7 @@ const showLess = (groupName: string) => {
 
                       {/* DESKTOP */}
                       <div
-                        className="hidden md:flex flex-col items-center rounded-2xl border bg-white"
+                        className="hidden md:flex flex-col items-center rounded-2xl border border-orange-400 bg-white"
                         style={{
                           //backgroundImage: "url('/NA-BG2.svg')",
                           backgroundSize: 'cover',
@@ -400,7 +400,7 @@ const showLess = (groupName: string) => {
                         <div className="
                           grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 
                           gap-8 justify-items-center w-full p-6 rounded-2xl
-                          border
+                          border border-transparent
                           transition duration-300
                         ">
                           {brands.slice(0, 3).map((brand) => (
@@ -456,7 +456,7 @@ const showLess = (groupName: string) => {
                                   className="
                                     px-6 py-2 rounded-xl 
                                     bg-brand-orange text-white font-semibold
-                                    border border-brand-orange
+                                    border border-grey-400
                                     hover:bg-white hover:text-brand-orange
                                     hover:border-brand-orange
                                     transition duration-300
@@ -520,9 +520,9 @@ const showLess = (groupName: string) => {
 
       {/* Login and Signup Section */}
       <div className="py-16 text-center bg-white 
-                      border border-orange-300 rounded-2xl
+                      border border-purple-400 rounded-2xl
                       font-bold
-                      hover:border-brand-orange hover:border-2
+                      hover:border-brand-purple hover:border-2
                       hover:scale-105 hover:z-20 hover:shadow-2xl
                       cursor-default select-none
                       transition-all duration-300
