@@ -375,7 +375,7 @@ const showLess = (groupName: string) => {
                     >
 
                       {/* MOBILE */}
-                      <div className="md:hidden -mx-20 px-4 border border-orange-400 rounded-2xl">
+                      <div className="md:hidden -mx-20 px-4 border border-transparent rounded-2xl">
                         <CommissionRateMobile 
                           brands={brands.map(brand => ({
                             ...brand,
