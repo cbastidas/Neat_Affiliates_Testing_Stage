@@ -369,7 +369,7 @@ const showLess = (groupName: string) => {
                     <section
                       key={groupName}
                       className="
-                        p-6 bg-purple-100 rounded-lg border shadow-sm
+                        p-6 bg-white rounded-lg border border-purple-400 shadow-sm
                         
                       "
                     >
@@ -400,7 +400,7 @@ const showLess = (groupName: string) => {
                         <div className="
                           grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 
                           gap-8 justify-items-center w-full p-6 rounded-2xl
-                          border border-transparent
+                          border
                           transition duration-300
                         ">
                           {brands.slice(0, 3).map((brand) => (

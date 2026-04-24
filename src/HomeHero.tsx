@@ -18,7 +18,6 @@ export default function HomeHero({ onSignup, onScrollNext }: Props) {
                  font-bold
                  hover:shadow-2xl
                  hover:border-brand-purple hover:border-2
-                 border border-transparent
                  transition
                  duration-300"
       style={{ paddingTop: "5rem" }} // offset for fixed navbar

@@ -40,10 +40,10 @@ export default function BrandLogoGallery({ onSignup }: BrandLogoGalleryProps) {
   className="
     relative overflow-hidden bg-white 
     py-16 md:py-16 
-    border border-orange-400
+    border border-purple-400
     rounded-2xl
     cursor-default select-none
-    hover:border-brand-orange hover:border-2
+    hover:border-brand-purple hover:border-2
     hover:scale-110 hover:z-20 hover:shadow-2xl
     transition-all duration-300
   "
