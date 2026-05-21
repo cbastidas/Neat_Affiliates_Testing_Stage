@@ -38,7 +38,7 @@ export default function BrandLogoGallery({ onSignup }: BrandLogoGalleryProps) {
   return (
     <section
   className="
-    relative overflow-hidden bg-white 
+    section-card relative overflow-hidden 
     py-16 md:py-16 
     border border-purple-400
     rounded-2xl

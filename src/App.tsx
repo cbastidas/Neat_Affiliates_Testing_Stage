@@ -344,7 +344,7 @@ const showLess = (groupName: string) => {
           <section
             id="CommissionRate"
             className="
-              bg-white 
+              section-card
               pt-6 md:pt-24 pb-6
               border rounded-2xl
               cursor-default select-none
@@ -519,7 +519,9 @@ const showLess = (groupName: string) => {
         </section>
 
       {/* Login and Signup Section */}
-      <div className="py-16 text-center bg-white 
+      <div className="
+                      section-card    
+                      py-16 text-center 
                       border border-purple-400 rounded-2xl
                       font-bold
                       hover:border-brand-purple hover:border-2

@@ -238,3 +238,36 @@
   animation: fadeIn 0.45s ease-out forwards;
 }
 
+/* ---- Reusable section card: subtle mesh + border + shadow ---- */
+.section-card {
+  background-color: #ffffff;
+  background-image:
+    radial-gradient(at 0% 0%, hsla(190, 100%, 95%, 1) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(339, 100%, 96%, 1) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(252, 100%, 95%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(225, 100%, 96%, 1) 0px, transparent 50%);
+  border: 1px solid #e6e3f2;
+  border-radius: 1rem;
+  box-shadow: 0 14px 34px -14px rgba(76, 29, 149, 0.20);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.section-card:hover {
+  box-shadow: 0 20px 44px -14px rgba(76, 29, 149, 0.28);
+  border-color: #c4b5fd;
+}
+
+/* ---- Full-page background: lavender mesh + soft diagonal streaks ---- */
+.app-background {
+  background-color: #e8e5f3;
+  background-image:
+    radial-gradient(at 12% 8%,  hsla(252, 60%, 97%, 1) 0px, transparent 48%),
+    radial-gradient(at 88% 12%, hsla(252, 55%, 95%, 1) 0px, transparent 48%),
+    radial-gradient(at 50% 100%, hsla(255, 50%, 94%, 1) 0px, transparent 55%),
+    repeating-linear-gradient(
+      125deg,
+      transparent 0px,
+      transparent 64px,
+      hsla(252, 45%, 99%, 0.55) 64px,
+      hsla(252, 45%, 99%, 0.55) 68px
+    );
+}

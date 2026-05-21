@@ -8,16 +8,10 @@ interface LayoutProps {
 
 export default function Layout({ onOpenModal }: LayoutProps) {
   return (
-    <div style={{
-  fontFamily: 'sans-serif',
-  minHeight: '100vh',
-  //backgroundColor: '#ffffff', //gray home
-  backgroundImage: "url('/NA-BG2.svg')",
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  backgroundRepeat: 'no-repeat',
-  backgroundAttachment: 'fixed',
-}}>
+    <div
+      className="app-background"
+      style={{ fontFamily: 'sans-serif', minHeight: '100vh' }}
+    >
       <main style={{ paddingTop: '6rem' }}>
         <Outlet />
       </main>

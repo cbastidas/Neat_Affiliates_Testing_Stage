@@ -31,8 +31,8 @@ export default function NewsImage() {
     <section
       id="News"
       className="
-        py-20 
-        bg-white 
+        section-card
+        py-20
         rounded-2xl 
         border border-purple-400
         shadow-sm 

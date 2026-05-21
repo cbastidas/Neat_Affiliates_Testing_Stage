@@ -36,7 +36,8 @@ export default function Faq({ onSignup }: FaqProps) {
   const filtered = faqs.filter(f => f.category === activeCategory);
 
   return (
-    <section id="FAQ" className="py-16 text-center bg-white 
+    <section id="FAQ" className="
+                                  section-card py-16 text-center
                                   border border-purple-300 rounded-2xl
                                   hover:border-brand-purple hover:border-2
                                   font-bold

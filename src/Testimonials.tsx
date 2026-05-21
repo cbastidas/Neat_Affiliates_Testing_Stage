@@ -152,7 +152,8 @@ export default function Testimonials() {
   return (
     <section
       id="Testimonials"
-      className="py-2 px-3 sm:pt-16 text-center bg-white
+      className="
+      section-card py-2 px-3 sm:pt-16 text-center 
       border border-purple-400 rounded-2xl
       font-bold
       cursor-default select-none
