@@ -1,54 +1,63 @@
-# React + TypeScript + Vite
+# Neat Affiliates
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page for the **Neat Affiliates** iGaming affiliate program, built with
+Next.js 14 (App Router), TypeScript and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js 18.18+ (Node 20 LTS recommended)
+- npm
 
-## Expanding the ESLint configuration
+## Getting started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Then open http://localhost:3000
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Scripts
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+| Command         | Description                          |
+| --------------- | ------------------------------------ |
+| `npm run dev`   | Start the development server         |
+| `npm run build` | Build for production                 |
+| `npm run start` | Run the production build             |
+
+## Project structure
+
+```
+app/
+  layout.tsx          Root layout: fonts, metadata, contact modal
+  page.tsx            Landing page (composes all sections)
+  globals.css         Tailwind directives + design-system CSS
+components/
+  layout/             Navbar, Footer
+  sections/           Hero, WhyJoin, LatestNews, Brands,
+                      CommissionRates, Testimonials, Faq, FinalCta
+  contact/            Contact modal + shared state + floating help button
+  ui/                 Reveal (scroll animation), Logo
+lib/
+  data.ts             Editable content: copy, brands, commission tiers, FAQs
+tailwind.config.ts    Design tokens (colors, typography, spacing)
+```
+
+## Editing content
+
+Most text, brands, commission tables and FAQ entries live in `lib/data.ts`.
+Edit that file to change content without touching the markup.
+
+## Design system
+
+Colors, typography scale and spacing tokens are defined in `tailwind.config.ts`
+and mirror the original `DESIGN.md` specification. Reusable visual styles
+(glass cards, gradients, animations) live in `app/globals.css`.
+
+## Adding a new page
+
+Create a folder under `app/` with a `page.tsx` file. Example:
+
+```
+app/dashboard/page.tsx  ->  /dashboard
 ```
